@@ -1,0 +1,48 @@
+<section class="bg-white">
+  <div class="container mx-auto p-4 lg:py-8">
+    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide bg-slate-300">
+            <img
+              src="../../public/slide1.jpg"
+              alt="slide1"
+              class="w-full object-cover min-h-[550px]"
+            />
+          </li>
+          <li class="splide__slide bg-slate-300">
+            <img
+              src="../../public/slide1.jpg"
+              alt="slide1"
+              class="w-full object-cover min-h-[550px]"
+            />
+          </li>
+          <li class="splide__slide bg-slate-300">
+            <img
+              src="../../public/slide1.jpg"
+              alt="slide1"
+              class="w-full object-cover min-h-[550px]"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import "@splidejs/splide/css";
+  import Splide from "@splidejs/splide";
+  new Splide(".splide", {
+    autoplay: true,
+    arrows: false,
+    perPage: 1,
+    gap: 15,
+    breakpoints: {
+      1200: {
+        gap: 0,
+        perPage: 1,
+      },
+    },
+  }).mount();
+</script>

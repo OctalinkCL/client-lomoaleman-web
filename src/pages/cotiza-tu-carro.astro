@@ -1,0 +1,74 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+
+const title = "Carro Lomo Alemán";
+---
+
+<Layout title="Menu - Lomo Alemán">
+  <main>
+    <div class="container mx-auto px-4 lg:px-0">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 lg:gap-12 lg:content-center lg:mt-12"
+      >
+        <!-- left -->
+        <div class="left">
+          <h1 class="text-4xl font-bold my-12">{title}</h1>
+          <p class="text-xl font-medium mb-3">Cotiza nuestro Foodcart</p>
+          <p>
+            Ahora puedes cotizar nuestro carrito para eventos especiales,
+            contáctanos.
+          </p>
+        </div>
+
+        <!-- right -->
+        <div class="right lg:flex lg:flex-col lg:justify-end mt-6 lg:mt-0">
+          <Button title="Llámanos" href="tel:+56942760766" />
+          <span class="block mt-5"></span>
+          <Button title="Cotizar por Whastapp" href="https://wa.me/+56942760766/?text=Hola,%20quiero%20cotizar%20un%20carro" />
+          <span class="block mt-5"></span>
+          <Button title="Enviar Correo" href="mailto:contacto@lomoaleman.cl" />
+        </div>
+      </div>
+
+      <!-- bento -->
+      <ul class="grid grid-cols-1 gap-4 mt-12 | lg:grid-cols-4">
+        <li class="bg-slate-200 lg:col-span-2 lg:row-span-2">
+          <img
+            src="../../public/cotiza/1.png"
+            class="h-full object-cover"
+            alt="image"
+          />
+        </li>
+        <li class="bg-slate-200">
+          <img
+            src="../../public/cotiza/2.jpg"
+            class="h-full object-cover"
+            alt="image"
+          />
+        </li>
+        <li class="bg-slate-200">
+          <img
+            src="../../public/cotiza/3.jpg"
+            class="h-full object-cover"
+            alt="image"
+          />
+        </li>
+        <li class="bg-slate-200">
+          <img
+            src="../../public/cotiza/4.jpg"
+            class="h-full object-cover"
+            alt="image"
+          />
+        </li>
+        <li class="bg-slate-200">
+          <img
+            src="../../public/cotiza/5.jpg"
+            class="h-full object-cover"
+            alt="image"
+          />
+        </li>
+      </ul>
+    </div>
+  </main>
+</Layout>

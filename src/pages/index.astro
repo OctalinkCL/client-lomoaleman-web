@@ -2,6 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 import branches from "../data/locales.json";
 
+import Splide from "../components/Splide.astro";
 import Card from "../components/Card.astro";
 
 // import regions from "../data/branches.json";
@@ -18,6 +19,8 @@ import Card from "../components/Card.astro";
 
 <Layout title="Lomo Alemán - Sandwichería y Delivery">
   <main>
+    <Splide />
+
     <!-- Locales -->
     <section class="section-branches">
       <div class="container mx-auto px-4 lg:px-0">
@@ -36,6 +39,74 @@ import Card from "../components/Card.astro";
               />
             ))
           }
+        </ul>
+      </div>
+    </section>
+
+    <!-- Negocios -->
+    <section class="section-business mt-12">
+      <div class="container mx-auto px-4 lg:px-0">
+        <!-- header -->
+        <header class="text-center">
+          <h3 class="text-4xl font-bold my-8">Tambien puede visitar...</h3>
+        </header>
+        <!-- grid -->
+        <ul class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <li>
+            <a
+              href="https://www.instagram.com/monpetiteventos_/"
+              target="_blank"
+              class="block text-center border-2 rounded-md border-[#FFAA00] overflow-hidden hover:border-white transition"
+            >
+              <img
+                src="../../public/index/petit.png"
+                alt="monpetit"
+                class="h-96 w-full object-cover"
+              />
+              <div class="px-12 py-4">
+                <h4 class="font-medium mb-3">Mon Petit Spa & Cumpleaños</h4>
+                <p class="text-xs">
+                  Centro de eventos infantiles en San Pedro de la paz
+                </p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/santochurroccp/"
+              target="_blank"
+              class="block text-center border-2 rounded-md border-[#FFAA00] overflow-hidden hover:border-white transition"
+            >
+              <img
+                src="../../public/index/churro.png"
+                alt="monpetit"
+                class="h-96 w-full object-cover"
+              />
+              <div class="px-12 py-4">
+                <h4 class="font-medium mb-3">Santo Churro</h4>
+                <p class="text-xs">Próximamete</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://sunsetlitoral.cl/"
+              target="_blank"
+              class="block text-center border-2 rounded-md border-[#FFAA00] overflow-hidden hover:border-white transition"
+            >
+              <img
+                src="../../public/index/sunset.png"
+                alt="monpetit"
+                class="h-96 w-full object-cover"
+              />
+              <div class="px-12 py-4">
+                <h4 class="font-medium mb-3">Sunset litoral Penco</h4>
+                <p class="text-xs">
+                  Estamos en Línea Férrea, Cochrane 53, Penco
+                </p>
+              </div>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
