@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+import branches from "../data/locales.json";
+
+import Card from "../components/Card.astro";
+
+// import regions from "../data/branches.json";
+// interface Region {
+//   id: number;
+//   name: string;
+//   roman_numeral: string;
+//   foo?: string;
+// }
+// const data: Region[] = regions;
+
+//
+---
+
+<Layout title="Lomo Alemán - Sandwichería y Delivery">
+  <main>
+    <!-- Locales -->
+    <section class="section-branches">
+      <div class="container mx-auto px-4 lg:px-0">
+        <!-- header -->
+        <header class="text-center">
+          <h3 class="text-4xl font-bold my-8">Locales</h3>
+        </header>
+        <!-- grid -->
+        <ul class="grid grid-cols-1 gap-4 | lg:grid-cols-3 lg:gap-6">
+          {
+            branches.map((local) => (
+              <Card
+                name={local.name}
+                address={local.address}
+                href={`/local/${local.slug}`}
+              />
+            ))
+          }
+        </ul>
+      </div>
+    </section>
+  </main>
+</Layout>

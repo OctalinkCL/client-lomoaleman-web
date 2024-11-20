@@ -1,0 +1,76 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import branches from "../../data/locales.json";
+
+import Button from "../../components/Button.astro";
+
+const { slug } = Astro.params;
+
+export function getStaticPaths() {
+  return branches.map((branch) => ({ params: { slug: branch.slug } }));
+}
+
+const branch = branches.find((branch) => branch.slug === slug);
+
+if (!branch) {
+  throw new Error(`No branch found with ID: ${slug}`);
+}
+---
+
+<Layout title={`${branch.name} - Lomo Aleman`}>
+  <main>
+    <div class="container mx-auto px-4 lg:px-0">
+      <h1 class="text-4xl font-bold my-12">{branch.name}</h1>
+      <p class="text-xl font-medium mb-3">
+        Lomo Alemán {branch.name} - Sandwichería Delivery
+      </p>
+
+      <ul class="mb-9">
+        <li>{branch.address}</li>
+        {
+          branch.phone ? (
+            <li>
+              Fono:{" "}
+              <a
+                href={`tel:+${branch.phone}`}
+                class="hover:text-amber-600 transition underline underline-offset-2"
+              >
+                +{branch.phone}
+              </a>
+            </li>
+          ) : null
+        }
+      </ul>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- phone -->
+        <Button title="Realizar Pedido" href={`tel:${branch.phone}`} />
+        <!-- whatsapp -->
+        {
+          branch.wsp ? (
+            <Button
+              title="Pedido por Whastapp"
+              href={`https://wa.me/${branch.wsp}/?text=Hola,%20quiero%20hacer%20un%20pedido`}
+            />
+          ) : null
+        }
+        <!-- instagram -->
+        {
+          branch.instagram ? (
+            <Button title="Instagram" href={branch.instagram} />
+          ) : null
+        }
+        <!-- menu -->
+        {branch.menu ? <Button title="Carta" href={branch.menu} /> : null}
+      </div>
+
+      <!-- map -->
+      <iframe
+        class="mt-6 w-full min-h-80"
+        loading="lazy"
+        src={`${branch.map}`}
+        title={branch.address}
+        aria-label={branch.address}></iframe>
+    </div>
+  </main>
+</Layout>

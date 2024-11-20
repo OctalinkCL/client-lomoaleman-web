@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Lomas Coloradas",
+    "address": "Los Mañios 7215, San Pedro",
+    "phone": "56413215202",
+    "map": "https://maps.google.com/maps?q=Los%20Ma%C3%B1ios%207215%2C%20san%20pedro%20de%20la%20paz&t=m&z=15&output=embed&iwloc=near",
+    "slug": "lomas-coloradas"
+  },
+  {
+    "name": "Brisas del Sol",
+    "address": "calle LL número 5904 local 1, condominio alerce, brisa del sol, Talcahuano",
+    "phone": "56987289084",
+    "map": "https://maps.google.com/maps?q=calle%20LL%20n%C3%BAmero%205904%20local%201%2C%20condominio%20alerce%2C%20brisas%20del%20sol%2C&t=m&z=15&output=embed&iwloc=near",
+    "wsp": "56987289084",
+    "slug": "brisas-del-sol"
+  },
+  {
+    "name": "Puente Alto",
+    "address": "Avenida Las Nieves Oriente (Ex San Carlos), N° 0321, LOCAL N° 2",
+    "phone": "56961136969",
+    "map": "https://maps.google.com/maps?q=avenida%20las%20nieves%20oriente%200321&t=m&z=15&output=embed&iwloc=near",
+    "wsp": "56961136969",
+    "menu": "https://lomoaleman.cl/wp-content/uploads/2024/05/lomoaleman_carta_puente_alto.pdf",
+    "instagram": "https://www.instagram.com/lomo_aleman_puentealto/",
+    "slug": "puente-alto"
+  },
+  {
+    "name": "San Pedro del Valle",
+    "address": "Av. Laguna Grande 1150, San Pedro de la Paz",
+    "phone": "56413832394",
+    "map": "https://maps.google.com/maps?q=Av.%20laguna%20grande%201150%2C%20san%20pedro%20de%20la%20paz&t=m&z=15&output=embed&iwloc=near",
+    "slug": "san-pedro-del-valle"
+  },
+  {
+    "name": "Colón",
+    "address": "Avenida Cristobal Colón 8871, Hualpén",
+    "phone": "56413832394",
+    "menu": "https://lomoaleman.cl/wp-content/uploads/2023/12/carta_colon.pdf",
+    "map": "https://maps.google.com/maps?q=Colon%208871%2C%20Hualpen&t=m&z=15&output=embed&iwloc=near",
+    "slug": "colon"
+  },
+  {
+    "name": "Concepción",
+    "address": "Serrano 330, Concepción centro",
+    "phone": "56413602737",
+    "map": "https://maps.google.com/maps?q=Serrano%20330%2C%20concepcion&t=m&z=15&output=embed&iwloc=near",
+    "slug": "concepcion",
+    "wsp": "56959913087"
+  }
+]
