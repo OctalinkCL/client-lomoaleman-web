@@ -403,31 +403,11 @@ const { title } = Astro.props;
 
   .app-header,
   .app-footer {
-    background:
-      linear-gradient(135deg, #0000 20.5%, #ffaa00 0 29.5%, #0000 0) 0 16px,
-      linear-gradient(45deg, #0000 8%, #ffaa00 0 17%, #0000 0 58%) 32px 0,
-      linear-gradient(
-        135deg,
-        #0000 8%,
-        #ffaa00 0 17%,
-        #0000 0 58%,
-        #ffaa00 0 67%,
-        #0000 0
-      ),
-      linear-gradient(
-        45deg,
-        #0000 8%,
-        #ffaa00 0 17%,
-        #0000 0 58%,
-        #ffaa00 0 67%,
-        #0000 0 83%,
-        #ffaa00 0 92%,
-        #0000 0
-      ),
-      #f9a600;
-    background-size: 64px 64px;
-    background: linear-gradient(135deg, #0000 18.75%, #ffaa00 0 31.25%, #0000 0),
-      repeating-linear-gradient(45deg, #ffaa00 -6.25% 6.25%, #ffb31c 0 18.75%);
-    background-size: 64px 64px;
+    background: radial-gradient(#f19a1a 15%, transparent 16%),
+      linear-gradient(45deg, transparent 49%, #f19a1a 49% 51%, transparent 51%),
+      linear-gradient(-45deg, transparent 49%, #f19a1a 49% 51%, transparent 51%);
+    background-size: 3em 3em;
+    background-color: #ffa830;
+    opacity: 1;
   }
 </style>
