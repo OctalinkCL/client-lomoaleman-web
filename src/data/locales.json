@@ -46,5 +46,61 @@
     "map": "https://maps.google.com/maps?q=Serrano%20330%2C%20concepcion&t=m&z=15&output=embed&iwloc=near",
     "slug": "concepcion",
     "wsp": "56959913087"
+  },
+  {
+    "name": "ARAUCO",
+    "address": "San Martin 335",
+    "map": "https://maps.google.com/maps?q=San%20Martin%20335%2C%20Arauco&t=m&z=15&output=embed&iwloc=near",
+    "slug": "arauco",
+    "phone": "56931201361"
+  },
+  {
+    "name": "TALCAHUANO",
+    "address": "Colón 3252, Talcahuano",
+    "map": "https://maps.google.com/maps?q=Colon%203252%2C%20Talcahuano&t=m&z=15&output=embed&iwloc=near",
+    "slug": "talcahuano",
+    "menu": "https://lomoaleman.cl/wp-content/uploads/2023/07/Lomoaleman_talcahuano-2023.pdf",
+    "phone": "56979881816",
+    "wsp": "56979881816"
+  },
+  {
+    "name": "CORONEL CENTRO",
+    "address": "Sotomayor 690, Coronel",
+    "map": "https://maps.google.com/maps?q=Sotomayor%20690%2C%20Coronel&t=m&z=15&output=embed&iwloc=near",
+    "slug": "coronel-centro",
+    "wsp": "56975652006",
+    "phone": "56412714992"
+  },
+  {
+    "name": "PENCO",
+    "address": "Maipú 10",
+    "map": "https://maps.google.com/maps?q=Maipu%2010%2C%20penco&t=m&z=15&output=embed&iwloc=near",
+    "slug": "penco",
+    "phone": "56940465717",
+    "wsp": "56940465717"
+  },
+  {
+    "name": "HUALQUI",
+    "address": "Bombero Perret 10 Hualqui",
+    "map": "https://maps.google.com/maps?q=Bombero%20Perret%2010%20Hualqui&t=m&z=17&output=embed&iwloc=near",
+    "slug": "hualqui",
+    "phone": "56999859327",
+    "wsp": "56999859327"
+  },
+  {
+    "name": "LOS PIONEROS",
+    "address": "Tucapel 821, Los Pioneros",
+    "wsp": "56957366212",
+    "phone": "412462450",
+    "menu": "https://lomoaleman.cl/wp-content/uploads/2023/11/lomo_lospioneros_web.pdf",
+    "map": "https://maps.google.com/maps?q=Tucapel%20821%2C%20San%20Pedro%20de%20la%20Paz%2C%20B%C3%ADo%20B%C3%ADo&t=m&z=15&output=embed&iwloc=near",
+    "slug": "los-pioneros"
+  },
+  {
+    "name": "CHIGUAYANTE",
+    "address": "Avenida Manuel Rodríguez 1699",
+    "phone": "56966537107",
+    "map": "https://maps.google.com/maps?q=Avenida%20Manuel%20Rodr%C3%ADguez%201699%2C%20Chigayante&t=m&z=15&output=embed&iwloc=near",
+    "slug": "chiguayante"
   }
 ]
