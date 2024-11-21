@@ -1,0 +1,94 @@
+---
+import AppNavigation from "@components/AppNavigation.astro";
+---
+
+<header
+  class="bg-black lg:bg-lomo lg:border-t-[20px] lg:border-black sticky top-0 z-50 border-b-2 border-zinc-800 lg:border-b-0"
+>
+  <div
+    class="container header-app mx-auto lg:flex lg:items-center lg:justify-between lg:h-24"
+  >
+    <!-- header -->
+    <div
+      class="flex justify-between items-center px-4 py-2 lg:px-0 lg:py-0 lg:w-1/5"
+    >
+      <!-- brand -->
+      <a href="/" aria-label="Link to home page">
+        <img src="/img/logo_text.svg" alt="LomoAleman" class="w-44 lg:w-48" />
+      </a>
+      <button
+        id="button"
+        class="lg:hidden bg-zinc-900 px-3 py-2 rounded"
+        aria-label="Button nav"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+          ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+            d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path
+            d="M4 18l16 0"></path></svg
+        >
+      </button>
+    </div>
+
+    <!-- navigation -->
+    <nav class="bg-zinc-900 lg:bg-transparent navigation hidden lg:block">
+      <AppNavigation title="Inicio" href="/" />
+      <AppNavigation title="Menu" href="/menu" />
+      <AppNavigation title="Cotiza tu Carro" href="/cotiza-tu-carro" />
+    </nav>
+
+    <!-- network -->
+    <ul class="hidden lg:flex lg:w-1/5 justify-end">
+      <li>
+        <a
+          href="https://www.instagram.com/lomoaleman/"
+          target="_blank"
+          aria-label="LomoAleman"
+          class="w-11 h-11 bg-amber-600 flex items-center justify-center rounded-full hover:bg-amber-900 transition"
+        >
+          <svg
+            class="w-7"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+            ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+            ></path><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path><path
+              d="M16.5 7.5v.01"></path></svg
+          >
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  const button = document.getElementById("button");
+  const menu = document.querySelector(".navigation");
+
+  function toggle() {
+    if (menu?.classList.contains("hidden")) {
+      console.debug("UNO");
+      menu.classList.remove("hidden");
+    } else {
+      console.debug("DOS");
+      menu?.classList.add("hidden");
+    }
+  }
+
+  button?.addEventListener("click", toggle);
+</script>
