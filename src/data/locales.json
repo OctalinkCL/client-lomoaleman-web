@@ -20,7 +20,7 @@
     "phone": "56961136969",
     "map": "https://maps.google.com/maps?q=avenida%20las%20nieves%20oriente%200321&t=m&z=15&output=embed&iwloc=near",
     "wsp": "56961136969",
-    "menu": "https://lomoaleman.cl/wp-content/uploads/2024/05/lomoaleman_carta_puente_alto.pdf",
+    "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2024/05/lomoaleman_carta_puente_alto.pdf",
     "instagram": "https://www.instagram.com/lomo_aleman_puentealto/",
     "slug": "puente-alto"
   },
@@ -35,9 +35,10 @@
     "name": "Colón",
     "address": "Avenida Cristobal Colón 8871, Hualpén",
     "phone": "56413832394",
-    "menu": "https://lomoaleman.cl/wp-content/uploads/2023/12/carta_colon.pdf",
+    "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/12/carta_colon.pdf",
     "map": "https://maps.google.com/maps?q=Colon%208871%2C%20Hualpen&t=m&z=15&output=embed&iwloc=near",
-    "slug": "colon"
+    "slug": "colon",
+    "wsp": "56932062006"
   },
   {
     "name": "Concepción",
@@ -59,7 +60,7 @@
     "address": "Colón 3252, Talcahuano",
     "map": "https://maps.google.com/maps?q=Colon%203252%2C%20Talcahuano&t=m&z=15&output=embed&iwloc=near",
     "slug": "talcahuano",
-    "menu": "https://lomoaleman.cl/wp-content/uploads/2023/07/Lomoaleman_talcahuano-2023.pdf",
+    "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/07/Lomoaleman_talcahuano-2023.pdf",
     "phone": "56979881816",
     "wsp": "56979881816"
   },
@@ -92,7 +93,7 @@
     "address": "Tucapel 821, Los Pioneros",
     "wsp": "56957366212",
     "phone": "412462450",
-    "menu": "https://lomoaleman.cl/wp-content/uploads/2023/11/lomo_lospioneros_web.pdf",
+    "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/11/lomo_lospioneros_web.pdf",
     "map": "https://maps.google.com/maps?q=Tucapel%20821%2C%20San%20Pedro%20de%20la%20Paz%2C%20B%C3%ADo%20B%C3%ADo&t=m&z=15&output=embed&iwloc=near",
     "slug": "los-pioneros"
   },
