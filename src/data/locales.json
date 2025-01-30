@@ -103,5 +103,12 @@
     "phone": "56966537107",
     "map": "https://maps.google.com/maps?q=Avenida%20Manuel%20Rodr%C3%ADguez%201699%2C%20Chigayante&t=m&z=15&output=embed&iwloc=near",
     "slug": "chiguayante"
+  },
+  {
+    "name": "Lota",
+    "address": "Cousiño 503, Lota",
+    "phone": "56923633655",
+    "map": "https://maps.google.com/maps?q=Cousiño%20503%2C%20lota&t=m&z=15&output=embed&iwloc=near",
+    "slug": "lota"
   }
 ]
