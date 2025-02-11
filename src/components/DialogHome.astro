@@ -1,0 +1,41 @@
+<div
+  id="dialog"
+  class="fixed z-[9999999] inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300 ease-in-out"
+>
+  <!-- dialog -->
+  <div
+    class="relative p-3 border w-[400px] max-w-[400px] shadow-lg rounded-md bg-white"
+  >
+    <img src="../img/lota.png" alt="Image" class="w-full" />
+    <button
+      id="closeDialog"
+      class="mt-4 px-4 py-2 bg-black text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-grey-700 focus:outline-none focus:ring-2 focus:ring-grey-300"
+    >
+      Cerrar
+    </button>
+  </div>
+  <!-- // -->
+</div>
+
+<script>
+  const dialog = document.getElementById("dialog");
+  const closeButton = document.getElementById("closeDialog");
+
+  const openDialog = () => {
+    dialog?.classList.remove("opacity-0", "pointer-events-none");
+    dialog?.querySelector("div")?.classList.remove("scale-95");
+    dialog?.querySelector("div")?.classList.add("scale-100");
+  };
+
+  const closeDialog = () => {
+    dialog?.classList.add("opacity-0", "pointer-events-none");
+    dialog?.querySelector("div")?.classList.remove("scale-100");
+    dialog?.querySelector("div")?.classList.add("scale-95");
+  };
+
+  document.addEventListener("DOMContentLoaded", () => {
+    openDialog();
+  });
+
+  closeButton?.addEventListener("click", closeDialog);
+</script>

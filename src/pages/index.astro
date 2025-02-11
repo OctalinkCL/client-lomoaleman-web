@@ -5,6 +5,8 @@ import branches from "@data/locales.json";
 import Splide from "@components/Splide.astro";
 import Card from "@components/Card.astro";
 
+import Dialog from "../components/DialogHome.astro";
+
 // import regions from "../data/branches.json";
 // interface Region {
 //   id: number;
@@ -13,13 +15,13 @@ import Card from "@components/Card.astro";
 //   foo?: string;
 // }
 // const data: Region[] = regions;
-
-//
 ---
 
 <Layout title="Lomo Alemán - Sandwichería y Delivery">
   <main>
     <Splide />
+
+    <Dialog />
 
     <!-- Locales -->
     <section class="section-branches">
