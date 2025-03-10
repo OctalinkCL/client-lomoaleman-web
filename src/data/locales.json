@@ -110,5 +110,13 @@
     "phone": "56923633655",
     "map": "https://maps.google.com/maps?q=Cousiño%20503%2C%20lota&t=m&z=15&output=embed&iwloc=near",
     "slug": "lota"
+  },
+  {
+    "name": "LOMAS DE SAN ANDRES",
+    "address": "Alonso García de Ramón 218, Concepción",
+    "phone": "412480753",
+    "wsp": "56952273708",
+    "map": "https://maps.google.com/maps?q=Alonso%20García%20de%20Ramón%20218%20Concepción&t=m&z=15&output=embed&iwloc=near",
+    "slug": "lomas-san-andres"
   }
 ]
