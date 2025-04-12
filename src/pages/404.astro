@@ -1,0 +1,18 @@
+---
+// src/pages/404.astro
+---
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redirigiendo...</title>
+        <meta http-equiv="refresh" content="0; url=/menu" />
+        <script>
+            window.location.href = "/menu";
+        </script>
+    </head>
+    <body>
+        <p>Redirigiendo a <a href="/menu">/carta</a>...</p>
+    </body>
+</html>
