@@ -57,8 +57,8 @@
   },
   {
     "name": "TALCAHUANO",
-    "address": "Colón 3252, Talcahuano",
-    "map": "https://maps.google.com/maps?q=Colon%203252%2C%20Talcahuano&t=m&z=15&output=embed&iwloc=near",
+    "address": "Juan Guillermo Sosa 321, Talcahuano",
+    "map": "https://maps.google.com/maps?q=Juan%20Guillermo%20Sosa%20321%2C%20Talcahuano&t=m&z=15&output=embed&iwloc=near",
     "slug": "talcahuano",
     "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/07/Lomoaleman_talcahuano-2023.pdf",
     "phone": "56979881816",
@@ -118,5 +118,12 @@
     "wsp": "56952273708",
     "map": "https://maps.google.com/maps?q=Alonso%20García%20de%20Ramón%20218%20Concepción&t=m&z=15&output=embed&iwloc=near",
     "slug": "lomas-san-andres"
+  },
+  {
+    "name": "VALLE NOBLE",
+    "address": "Valle Noble 50, Concepción",
+    "wsp": "56989332394",
+    "map": "https://maps.google.com/maps?q=Valle%20Noble%2050%20Concepción&t=m&z=15&output=embed&iwloc=near",
+    "slug": "valle-noble"
   }
 ]
