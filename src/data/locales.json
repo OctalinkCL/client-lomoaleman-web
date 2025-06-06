@@ -126,5 +126,13 @@
     "wsp": "56989332394",
     "map": "https://maps.google.com/maps?q=Valle%20Noble%2050%20Concepción&t=m&z=15&output=embed&iwloc=near",
     "slug": "valle-noble"
+  },
+  {
+    "name": "CONCEPCIÓN",
+    "address": "Colo Colo 367, Concepción",
+    "phone": "56934909318",
+    "wsp": "56934909318",
+    "map": "https://maps.google.com/maps?q=Colo%20Colo%20367%20Concepción&t=m&z=15&output=embed&iwloc=near",
+    "slug": "concepcion"
   }
 ]

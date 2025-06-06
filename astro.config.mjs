@@ -8,5 +8,8 @@ export default defineConfig({
   integrations: [tailwind()],
   redirects: {
     '/locales/menu-ruta-litoral': '/menu',
+  },
+  build: {
+    assets: '_astro'
   }
 });
