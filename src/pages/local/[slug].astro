@@ -1,34 +1,42 @@
 ---
 import Layout from "../../layouts/Layout.astro";
-import branches from "../../data/locales.json";
+import { getBranchSlugs, getBranchBySlug } from "../../lib/firebase.js";
 import Button from "../../components/Button.astro";
 
 const { slug } = Astro.params;
 
-export function getStaticPaths() {
-  return branches.map((branch) => ({ params: { slug: branch.slug } }));
+export async function getStaticPaths() {
+  console.log("🚀 Generando rutas estáticas desde Firestore...");
+
+  try {
+    const slugs = await getBranchSlugs();
+    const paths = slugs.map((slug) => ({
+      params: { slug },
+    }));
+
+    console.log(`✅ ${paths.length} rutas generadas:`, slugs);
+    return paths;
+  } catch (error) {
+    console.error("❌ Error al generar rutas estáticas:", error);
+    return []; // Retorna array vacío si hay error
+  }
 }
 
-const branch = branches.find((branch) => branch.slug === slug);
+// Obtener datos del local específico
+console.log(`🔍 Buscando local con slug: ${slug}`);
+const branch = await getBranchBySlug(slug);
 
 if (!branch) {
-  throw new Error(`No branch found with ID: ${slug}`);
+  console.error(`❌ No se encontró local con slug: ${slug}`);
+  throw new Error(`No branch found with slug: ${slug}`);
 }
 
-// Obtener versión para cache busting
-const version = import.meta.env.BUILD_VERSION || Date.now();
+console.log(`✅ Local encontrado: ${branch.name}`);
 ---
 
 <Layout title={`${branch.name} - Lomo Aleman`}>
-  <!-- Meta tags específicos para cache busting de páginas dinámicas -->
-  <meta
-    slot="head"
-    http-equiv="Cache-Control"
-    content="no-cache, no-store, must-revalidate, max-age=0"
-  />
-  <meta slot="head" http-equiv="Pragma" content="no-cache" />
-  <meta slot="head" http-equiv="Expires" content="0" />
-  <meta slot="head" name="build-version" content={version} />
+  <!-- Meta tags para cache control -->
+  <meta slot="head" http-equiv="Cache-Control" content="public, max-age=3600" />
 
   <main>
     <div class="container mx-auto px-4 lg:px-0">
@@ -56,7 +64,12 @@ const version = import.meta.env.BUILD_VERSION || Date.now();
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <!-- phone -->
-        <Button title="Realizar Pedido" href={`tel:${branch.phone}`} />
+        {
+          branch.phone && (
+            <Button title="Realizar Pedido" href={`tel:${branch.phone}`} />
+          )
+        }
+
         <!-- whatsapp -->
         {
           branch.wsp ? (
@@ -66,38 +79,30 @@ const version = import.meta.env.BUILD_VERSION || Date.now();
             />
           ) : null
         }
+
         <!-- instagram -->
         {
           branch.instagram ? (
             <Button title="Instagram" href={branch.instagram} />
           ) : null
         }
+
         <!-- menu -->
         {branch.menu ? <Button title="Carta" href={branch.menu} /> : null}
       </div>
 
       <!-- map -->
-      <iframe
-        class="mt-6 w-full min-h-80"
-        loading="lazy"
-        src={`${branch.map}`}
-        title={branch.address}
-        aria-label={branch.address}></iframe>
+      {
+        branch.map && (
+          <iframe
+            class="mt-6 w-full min-h-80"
+            loading="lazy"
+            src={`${branch.map}`}
+            title={branch.address}
+            aria-label={branch.address}
+          />
+        )
+      }
     </div>
   </main>
-
-  <!-- Script para forzar actualización en caso de cache persistente -->
-  <script define:vars={{ version }}>
-    // Verificar si hay una nueva versión disponible
-    const currentVersion = version;
-    const storedVersion = sessionStorage.getItem("branchPageVersion");
-
-    if (storedVersion && storedVersion !== currentVersion) {
-      // Si hay una nueva versión, forzar recarga
-      window.location.reload(true);
-    }
-
-    // Guardar la versión actual
-    sessionStorage.setItem("branchPageVersion", currentVersion);
-  </script>
 </Layout>
