@@ -1,10 +1,12 @@
 ---
 import Layout from "@layouts/Layout.astro";
-import branches from "@data/locales.json";
+import { getAllBranches } from "../lib/firebase.js";
 
 import Splide from "@components/Splide.astro";
 import Card from "@components/Card.astro";
 
+// Obtener locales desde Firestore
+const branches = await getAllBranches();
 ---
 
 <Layout title="Lomo Alemán - Sandwichería y Delivery">
@@ -19,17 +21,25 @@ import Card from "@components/Card.astro";
           <h3 class="text-4xl font-bold my-8">Locales</h3>
         </header>
         <!-- grid -->
-        <ul class="grid grid-cols-1 gap-4 | lg:grid-cols-3 lg:gap-6">
-          {
-            branches.map((local) => (
-              <Card
-                name={local.name}
-                address={local.address}
-                href={`/local/${local.slug}`}
-              />
-            ))
-          }
-        </ul>
+        {branches.length > 0 ? (
+          <ul class="grid grid-cols-1 gap-4 | lg:grid-cols-3 lg:gap-6">
+            {
+              branches.map((local) => (
+                <Card
+                  name={local.name}
+                  address={local.address}
+                  href={`/local/${local.slug}`}
+                />
+              ))
+            }
+          </ul>
+        ) : (
+          <!-- Fallback si no hay locales -->
+          <div class="text-center py-12">
+            <p class="text-gray-600">No se pudieron cargar los locales en este momento.</p>
+            <p class="text-sm text-gray-500 mt-2">Por favor, intenta más tarde.</p>
+          </div>
+        )}
       </div>
     </section>
 
