@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 
 // Obtener datos del local específico
 console.log(`🔍 Buscando local con slug: ${slug}`);
-const branch = await getBranchBySlug(slug);
+const branch = await getBranchBySlug(slug) as any;
 
 if (!branch) {
   console.error(`❌ No se encontró local con slug: ${slug}`);
