@@ -2,7 +2,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, getDocs, doc, getDoc } from 'firebase/firestore';
 
-// Configuración de Firebase usando variables de entorno
 const firebaseConfig = {
   apiKey: import.meta.env.FIREBASE_API_KEY,
   authDomain: import.meta.env.FIREBASE_AUTH_DOMAIN,
