@@ -2,6 +2,7 @@
 import Layout from "../../layouts/Layout.astro";
 import { getBranchSlugs, getBranchBySlug } from "../../lib/firebase.js";
 import Button from "../../components/Button.astro";
+import Instagram from "@lucide/astro/icons/instagram";
 
 const { slug } = Astro.params;
 
@@ -24,7 +25,7 @@ export async function getStaticPaths() {
 
 // Obtener datos del local específico
 console.log(`🔍 Buscando local con slug: ${slug}`);
-const branch = await getBranchBySlug(slug) as any;
+const branch = (await getBranchBySlug(slug)) as any;
 
 if (!branch) {
   console.error(`❌ No se encontró local con slug: ${slug}`);
@@ -63,6 +64,15 @@ console.log(`✅ Local encontrado: ${branch.name}`);
       </ul>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- instagram -->
+        {
+          branch.instagram && (
+            <a href={branch.instagram} target="_blank" class="flex border-2 rounded-md p-4 text-xl font-bold items-center justify-center | bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]">
+              <Instagram class="me-3" />
+              Siguenos en Instagram
+            </a>
+          )
+        }
         <!-- phone -->
         {
           branch.phone && (
@@ -77,13 +87,6 @@ console.log(`✅ Local encontrado: ${branch.name}`);
               title="Pedido por Whastapp"
               href={`https://wa.me/${branch.wsp}/?text=Hola,%20quiero%20hacer%20un%20pedido`}
             />
-          ) : null
-        }
-
-        <!-- instagram -->
-        {
-          branch.instagram ? (
-            <Button title="Instagram" href={branch.instagram} />
           ) : null
         }
 
