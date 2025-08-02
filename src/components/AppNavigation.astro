@@ -2,16 +2,18 @@
 interface Props {
   title: string;
   href: string;
+  target?: string;
 }
 
-const { title, href } = Astro.props;
+const { title, href, target } = Astro.props;
 const isActive = Astro.url.pathname === href;
 ---
 
 <a
-  class="block px-6 py-3 border-b font-medium border-zinc-800 | lg:inline-block lg:px-4 lg:py-2 lg:rounded-full lg:border-b-0 lg:font-bold lg:text-black lg:text-lg lg:hover:bg-amber-500 transition"
+  class="block animate-wiggle px-6 py-3 border-b font-medium border-zinc-800 | lg:inline-block lg:px-4 lg:py-2 lg:rounded-full lg:border-b-0 lg:font-bold lg:text-black lg:text-lg lg:hover:bg-amber-500 transition"
   href={href}
   aria-label={title}
+  target={target}
   class:list={isActive ? "bg-zinc-700 | lg:bg-amber-500" : ""}
 >
   {title}
