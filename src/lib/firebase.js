@@ -1,14 +1,20 @@
 // src/lib/firebase.js
-import { initializeApp } from 'firebase/app';
-import { getFirestore, collection, getDocs, doc, getDoc } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import {
+  getFirestore,
+  collection,
+  getDocs,
+  doc,
+  getDoc,
+} from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.FIREBASE_API_KEY,
-  authDomain: import.meta.env.FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.FIREBASE_APP_ID,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 // Inicializar Firebase
@@ -16,7 +22,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Nombre de la colección
-const COLLECTION_NAME = 'lomo_aleman_branches';
+const COLLECTION_NAME = "lomo_aleman_branches";
 
 // Función para obtener todos los documentos de la colección
 export async function getAllBranches() {
@@ -27,14 +33,14 @@ export async function getAllBranches() {
     querySnapshot.forEach((doc) => {
       branches.push({
         id: doc.id,
-        ...doc.data()
+        ...doc.data(),
       });
     });
 
     console.debug(`✅ Se obtuvieron ${branches.length} locales de Firestore`);
     return branches;
   } catch (error) {
-    console.error('❌ Error al obtener locales:', error);
+    console.error("❌ Error al obtener locales:", error);
     return []; // Retorna array vacío si hay error
   }
 }
@@ -49,7 +55,7 @@ export async function getBranchBySlug(slug) {
     if (docSnap.exists()) {
       const branchData = {
         id: docSnap.id,
-        ...docSnap.data()
+        ...docSnap.data(),
       };
       console.log(`✅ Local encontrado: ${branchData.name}`);
       return branchData;
@@ -77,7 +83,7 @@ export async function getBranchSlugs() {
     console.log(`✅ Se obtuvieron ${slugs.length} slugs para rutas estáticas`);
     return slugs;
   } catch (error) {
-    console.error('❌ Error al obtener slugs:', error);
+    console.error("❌ Error al obtener slugs:", error);
     return [];
   }
 }
@@ -86,10 +92,10 @@ export async function getBranchSlugs() {
 export async function testFirestoreConnection() {
   try {
     await getDocs(collection(db, COLLECTION_NAME));
-    console.log('✅ Conexión a Firestore exitosa');
+    console.log("✅ Conexión a Firestore exitosa");
     return true;
   } catch (error) {
-    console.error('❌ Error de conexión a Firestore:', error);
+    console.error("❌ Error de conexión a Firestore:", error);
     return false;
   }
 }
