@@ -1,4 +1,6 @@
 ---
+import Analytics from "@vercel/analytics/astro";
+
 import AppHeader from "@components/AppHeader.astro";
 import AppFooter from "@components/AppFooter.astro";
 // import DialogHome from "@components/DialogHome.astro";
@@ -21,13 +23,14 @@ const version = import.meta.env.BUILD_VERSION || Date.now();
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!-- STYLES_DOC -->
-    <link rel="stylesheet" href={`style.css?v=${version}`}>
+    <link rel="stylesheet" href={`style.css?v=${version}`} />
   </head>
   <body>
     <AppHeader />
     <slot />
     <!-- <DialogHome /> -->
     <AppFooter />
+    <Analytics />
   </body>
 </html>
 
