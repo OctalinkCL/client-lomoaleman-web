@@ -1,5 +1,5 @@
 // src/lib/firebase.js
-import { initializeApp } from "firebase/app";
+import { initializeApp, getApps, getApp } from "firebase/app";
 import {
   getFirestore,
   collection,
@@ -8,17 +8,22 @@ import {
   getDoc,
 } from "firebase/firestore";
 
+// Soporta PUBLIC_* (local/Astro) y VITE_* (Vercel) como fallback
+const env = import.meta.env;
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: env.PUBLIC_FIREBASE_API_KEY || env.VITE_FIREBASE_API_KEY,
+  authDomain: env.PUBLIC_FIREBASE_AUTH_DOMAIN || env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: env.PUBLIC_FIREBASE_PROJECT_ID || env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket:
+    env.PUBLIC_FIREBASE_STORAGE_BUCKET || env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:
+    env.PUBLIC_FIREBASE_MESSAGING_SENDER_ID ||
+    env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: env.PUBLIC_FIREBASE_APP_ID || env.VITE_FIREBASE_APP_ID,
 };
 
-// Inicializar Firebase
-const app = initializeApp(firebaseConfig);
+// Inicializar Firebase (evitar duplicados)
+const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // Nombre de la colección
@@ -38,7 +43,7 @@ export async function getAllBranches() {
     });
 
     console.debug(`✅ Se obtuvieron ${branches.length} locales de Firestore`);
-    return branches;
+    return branches.filter((b) => !b.disabled);
   } catch (error) {
     console.error("❌ Error al obtener locales:", error);
     return []; // Retorna array vacío si hay error
@@ -76,8 +81,10 @@ export async function getBranchSlugs() {
     const slugs = [];
 
     querySnapshot.forEach((doc) => {
-      // El slug debería ser el ID del documento
-      slugs.push(doc.id);
+      // Solo incluir slugs de locales no deshabilitados
+      if (!doc.data().disabled) {
+        slugs.push(doc.id);
+      }
     });
 
     console.log(`✅ Se obtuvieron ${slugs.length} slugs para rutas estáticas`);
