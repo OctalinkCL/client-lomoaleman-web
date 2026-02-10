@@ -43,7 +43,7 @@ export async function getAllBranches() {
     });
 
     console.debug(`✅ Se obtuvieron ${branches.length} locales de Firestore`);
-    return branches;
+    return branches.filter((b) => !b.disabled);
   } catch (error) {
     console.error("❌ Error al obtener locales:", error);
     return []; // Retorna array vacío si hay error
@@ -81,8 +81,10 @@ export async function getBranchSlugs() {
     const slugs = [];
 
     querySnapshot.forEach((doc) => {
-      // El slug debería ser el ID del documento
-      slugs.push(doc.id);
+      // Solo incluir slugs de locales no deshabilitados
+      if (!doc.data().disabled) {
+        slugs.push(doc.id);
+      }
     });
 
     console.log(`✅ Se obtuvieron ${slugs.length} slugs para rutas estáticas`);
