@@ -95,6 +95,31 @@ export async function getBranchSlugs() {
   }
 }
 
+// Función para obtener el menú público de la empresa
+export async function getMenu() {
+  try {
+    const docRef = doc(
+      db,
+      "companies",
+      "uWbWnx3coQ9g1e5dciH4",
+      "public",
+      "menu",
+    );
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      console.debug("✅ Menú obtenido de Firestore");
+      return { id: docSnap.id, ...docSnap.data() };
+    } else {
+      console.log("⚠️ No se encontró el documento de menú");
+      return null;
+    }
+  } catch (error) {
+    console.error("❌ Error al obtener menú:", error);
+    return null;
+  }
+}
+
 // Función para probar la conexión a Firestore
 export async function testFirestoreConnection() {
   try {
