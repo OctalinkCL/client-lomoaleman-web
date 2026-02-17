@@ -1,0 +1,13 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { getMenu } from "../lib/firebase.js";
+
+const menu = await getMenu();
+---
+
+<Layout title="Carta - Lomo Alemán">
+  <main class="container mx-auto px-4 py-8">
+    <h1 class="text-3xl font-bold mb-6">Carta</h1>
+    <pre class="bg-zinc-900 text-green-400 p-6 rounded-lg overflow-auto text-sm max-h-[80vh]">{JSON.stringify(menu, null, 2)}</pre>
+  </main>
+</Layout>

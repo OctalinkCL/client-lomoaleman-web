@@ -26,13 +26,15 @@ const firebaseConfig = {
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-// Nombre de la colección
-const COLLECTION_NAME = "lomo_aleman_branches";
+// ID de la empresa
+const COMPANY_ID = "uWbWnx3coQ9g1e5dciH4";
 
 // Función para obtener todos los documentos de la colección
 export async function getAllBranches() {
   try {
-    const querySnapshot = await getDocs(collection(db, COLLECTION_NAME));
+    const querySnapshot = await getDocs(
+      collection(db, "companies", COMPANY_ID, "branches"),
+    );
     const branches = [];
 
     querySnapshot.forEach((doc) => {
@@ -53,8 +55,7 @@ export async function getAllBranches() {
 // Función para obtener un documento específico por ID
 export async function getBranchBySlug(slug) {
   try {
-    // Usar el slug como ID del documento
-    const docRef = doc(db, COLLECTION_NAME, slug);
+    const docRef = doc(db, "companies", COMPANY_ID, "branches", slug);
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
@@ -77,7 +78,9 @@ export async function getBranchBySlug(slug) {
 // Función para obtener todos los slugs de los documentos en la colección
 export async function getBranchSlugs() {
   try {
-    const querySnapshot = await getDocs(collection(db, COLLECTION_NAME));
+    const querySnapshot = await getDocs(
+      collection(db, "companies", COMPANY_ID, "branches"),
+    );
     const slugs = [];
 
     querySnapshot.forEach((doc) => {
@@ -95,14 +98,21 @@ export async function getBranchSlugs() {
   }
 }
 
-// Función para probar la conexión a Firestore
-export async function testFirestoreConnection() {
+// Función para obtener el menú público de la empresa
+export async function getMenu() {
   try {
-    await getDocs(collection(db, COLLECTION_NAME));
-    console.log("✅ Conexión a Firestore exitosa");
-    return true;
+    const docRef = doc(db, "companies", COMPANY_ID, "public", "menu");
+    const docSnap = await getDoc(docRef);
+
+    if (docSnap.exists()) {
+      console.debug("✅ Menú obtenido de Firestore");
+      return { id: docSnap.id, ...docSnap.data() };
+    } else {
+      console.log("⚠️ No se encontró el documento de menú");
+      return null;
+    }
   } catch (error) {
-    console.error("❌ Error de conexión a Firestore:", error);
-    return false;
+    console.error("❌ Error al obtener menú:", error);
+    return null;
   }
 }
