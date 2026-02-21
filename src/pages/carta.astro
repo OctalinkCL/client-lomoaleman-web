@@ -7,7 +7,34 @@ const menu = await getMenu();
 
 <Layout title="Carta - Lomo Alemán">
   <main class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold mb-6">Carta</h1>
-    <pre class="bg-zinc-900 text-green-400 p-6 rounded-lg overflow-auto text-sm max-h-[80vh]">{JSON.stringify(menu, null, 2)}</pre>
+    <!-- <pre>{JSON.stringify(menu, null, 2)}</pre> -->
+
+    <div class="grid md:grid-cols-4 gap-4">
+      {
+        menu.map((section: any) => (
+          <section class="border-2 border-neutral-700 p-3 rounded">
+            <header class="mb-4">
+              <h2 class="text-amber-600 text-2xl font-semibold">
+                {section.title}
+              </h2>
+              <p class="text-neutral-400 text-xs">{section.subtitle}</p>
+            </header>
+            <ul class="grid gap-2">
+              {section.items.map((item: any) => (
+                <li class="flex justify-between items-end gap-4 border-t border-neutral-900 border-dashed pt-1">
+                  <div>
+                    <h3 class="text-base text-amber-500 font-semibold">
+                      {item.name}
+                    </h3>
+                    <p class="text-neutral-400 text-xs">{item.description}</p>
+                  </div>
+                  <p class="font-semibold">${item.basePrice}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ))
+      }
+    </div>
   </main>
 </Layout>

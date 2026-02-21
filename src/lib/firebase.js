@@ -106,7 +106,8 @@ export async function getMenu() {
 
     if (docSnap.exists()) {
       console.debug("✅ Menú obtenido de Firestore");
-      return { id: docSnap.id, ...docSnap.data() };
+      // return { id: docSnap.id, ...docSnap.data() };
+      return docSnap.data().sections;
     } else {
       console.log("⚠️ No se encontró el documento de menú");
       return null;
