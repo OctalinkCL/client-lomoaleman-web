@@ -27,7 +27,7 @@ const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 // ID de la empresa
-const COMPANY_ID = "uWbWnx3coQ9g1e5dciH4";
+const COMPANY_ID = "xqO60QIUeipK89GfplEW";
 
 // Función para obtener todos los documentos de la colección
 export async function getAllBranches() {
@@ -101,7 +101,13 @@ export async function getBranchSlugs() {
 // Función para obtener el menú público de la empresa
 export async function getMenu() {
   try {
-    const docRef = doc(db, "companies", COMPANY_ID, "public", "menu");
+    const docRef = doc(
+      db,
+      "companies",
+      COMPANY_ID,
+      "public",
+      "Sm4I1DV5Pv3xlLE4YAHr",
+    );
     const docSnap = await getDoc(docRef);
 
     if (docSnap.exists()) {
