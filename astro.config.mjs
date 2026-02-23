@@ -6,7 +6,7 @@ import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   output: "hybrid",
-  adapter: vercel(),
+  adapter: vercel({ maxDuration: 60 }),
   integrations: [tailwind()],
   redirects: {
     "/locales/menu-ruta-litoral": "/menu",

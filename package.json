@@ -2,6 +2,9 @@
   "name": "web-lomoaleman",
   "type": "module",
   "version": "0.0.1",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "astro dev --host",
     "start": "astro dev",
