@@ -1,38 +1,18 @@
 ---
+export const prerender = false;
+
 import Layout from "../../layouts/Layout.astro";
-import { getBranchSlugs, getBranchBySlug } from "../../lib/firebase.js";
+import { getBranchBySlug } from "../../lib/firebase.js";
 import Button from "../../components/Button.astro";
 import Instagram from "@lucide/astro/icons/instagram";
 
 const { slug } = Astro.params;
 
-export async function getStaticPaths() {
-  console.log("🚀 Generando rutas estáticas desde Firestore...");
-
-  try {
-    const slugs = await getBranchSlugs();
-    const paths = slugs.map((slug) => ({
-      params: { slug },
-    }));
-
-    console.log(`✅ ${paths.length} rutas generadas:`, slugs);
-    return paths;
-  } catch (error) {
-    console.error("❌ Error al generar rutas estáticas:", error);
-    return []; // Retorna array vacío si hay error
-  }
-}
-
-// Obtener datos del local específico
-console.log(`🔍 Buscando local con slug: ${slug}`);
-const branch = (await getBranchBySlug(slug)) as any;
+const branch = (await getBranchBySlug(slug as string)) as any;
 
 if (!branch) {
-  console.error(`❌ No se encontró local con slug: ${slug}`);
-  throw new Error(`No branch found with slug: ${slug}`);
+  return Astro.redirect("/404");
 }
-
-console.log(`✅ Local encontrado: ${branch.name}`);
 ---
 
 <Layout title={`${branch.name} - Lomo Aleman`}>
