@@ -1,18 +1,20 @@
 ---
-export const prerender = false;
-
 import Layout from "../../layouts/Layout.astro";
-import { getBranchBySlug } from "../../lib/firebase.js";
+import branchesData from "../../data/branches.json";
 import Button from "../../components/Button.astro";
 import Instagram from "@lucide/astro/icons/instagram";
 
-const { slug } = Astro.params;
-
-const branch = (await getBranchBySlug(slug as string)) as any;
-
-if (!branch) {
-  return Astro.redirect("/404");
+// Generar rutas estáticas para todos los locales no disabled
+export function getStaticPaths() {
+  return branchesData
+    .filter((b: any) => !b.disabled)
+    .map((branch: any) => ({
+      params: { slug: branch.slug },
+      props: { branch }
+    }));
 }
+
+const { branch } = Astro.props;
 ---
 
 <Layout title={`${branch.name} - Lomo Aleman`}>

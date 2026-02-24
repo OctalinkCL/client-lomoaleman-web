@@ -5,8 +5,8 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
-  adapter: vercel({ maxDuration: 60 }),
+  output: "static",
+  adapter: vercel(),
   integrations: [tailwind()],
   redirects: {
     "/locales/menu-ruta-litoral": "/menu",

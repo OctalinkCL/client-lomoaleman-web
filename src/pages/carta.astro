@@ -1,10 +1,18 @@
 ---
-export const prerender = false;
-
 import Layout from "@layouts/Layout.astro";
-import { getMenu } from "../lib/firebase.js";
+import menuData from "../data/menu.json";
 
-const menu = await getMenu();
+// Filtrar secciones no disabled, ordenar por order
+// Filtrar items no disabled dentro de cada sección, ordenar por order
+const menu = menuData
+  .filter((section: any) => !section.disabled)
+  .sort((a: any, b: any) => a.order - b.order)
+  .map((section: any) => ({
+    ...section,
+    items: section.items
+      .filter((item: any) => !item.disabled)
+      .sort((a: any, b: any) => a.order - b.order)
+  }));
 ---
 
 <Layout title="Carta - Lomo Alemán">
@@ -24,14 +32,28 @@ const menu = await getMenu();
               </header>
               <ul class="grid gap-2">
                 {section.items.map((item: any) => (
-                  <li class="flex justify-between items-end gap-4 border-t border-neutral-900 border-dashed pt-1">
-                    <div>
+                  <li class="border-t border-neutral-900 border-dashed pt-1">
+                    <div class="flex justify-between items-start gap-4">
                       <h3 class="text-base text-amber-500 font-semibold">
                         {item.name}
                       </h3>
-                      <p class="text-neutral-400 text-xs">{item.description}</p>
+                      {(!item.variants || item.variants.length === 0) && (
+                        <p class="font-semibold">${item.basePrice}</p>
+                      )}
                     </div>
-                    <p class="font-semibold">${item.basePrice}</p>
+                    {item.description && (
+                      <p class="text-neutral-400 text-xs">{item.description}</p>
+                    )}
+                    {item.variants && item.variants.length > 0 && (
+                      <ul class="mt-1 space-y-0.5">
+                        {item.variants.map((variant: any) => (
+                          <li class="flex justify-between text-sm">
+                            <span class="text-neutral-400">{variant.name}</span>
+                            <span class="font-semibold">${variant.price}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
                   </li>
                 ))}
               </ul>

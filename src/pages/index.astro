@@ -1,13 +1,14 @@
 ---
-export const prerender = false;
-
 import Layout from "@layouts/Layout.astro";
-import { getAllBranches } from "../lib/firebase.js";
+import branchesData from "../data/branches.json";
 
 import Splide from "@components/Splide.astro";
 import Card from "@components/Card.astro";
 
-const branches = await getAllBranches();
+// Filtrar locales no disabled, ordenar por order
+const branches = branchesData
+  .filter((branch: any) => !branch.disabled)
+  .sort((a: any, b: any) => a.order - b.order);
 ---
 
 <Layout title="Lomo Alemán - Sandwichería y Delivery">
