@@ -1,0 +1,164 @@
+[
+  {
+    "id": "arauco",
+    "slug": "arauco",
+    "phone": "56931201361",
+    "address": "San Martin 335, Arauco",
+    "disabled": false,
+    "map": "https://maps.google.com/maps?q=San%20Martin%20335%2C%20Arauco&t=m&z=15&output=embed&iwloc=near",
+    "name": "ARAUCO",
+    "order": 0
+  },
+  {
+    "id": "baquedano",
+    "phone": "56988793550",
+    "slug": "baquedano",
+    "wsp": "56988793550",
+    "address": "Baquedano 110, Concepción",
+    "disabled": false,
+    "name": "Baquedano",
+    "map": "https://maps.google.com/maps?q=Baquedano%20110%20Concepcion&t=m&z=15&output=embed&iwloc=near",
+    "order": 1
+  },
+  {
+    "id": "chiguayante",
+    "slug": "chiguayante",
+    "phone": "56966537107",
+    "address": "Avenida Manuel Rodríguez 1699",
+    "disabled": false,
+    "map": "https://maps.google.com/maps?q=Avenida%20Manuel%20Rodr%C3%ADguez%201699%2C%20Chigayante&t=m&z=15&output=embed&iwloc=near",
+    "name": "CHIGUAYANTE",
+    "order": 2
+  },
+  {
+    "id": "colon",
+    "disabled": false,
+    "name": "Colón",
+    "phone": "56932062006",
+    "wsp": "56932062006",
+    "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/12/carta_colon.pdf",
+    "map": "https://maps.google.com/maps?q=Colon%208871%2C%20Hualpen&t=m&z=15&output=embed&iwloc=near",
+    "slug": "colon",
+    "address": "Avenida Cristobal Colón 8871, Hualpén",
+    "order": 3
+  },
+  {
+    "id": "concepcion",
+    "address": "Colo Colo 367, Concepción",
+    "wsp": "56934909318",
+    "phone": "56934909318",
+    "slug": "concepcion",
+    "name": "Concepción",
+    "map": "https://maps.google.com/maps?q=Colo%20Colo%20367%20Concepción&t=m&z=15&output=embed&iwloc=near",
+    "disabled": false,
+    "order": 4
+  },
+  {
+    "id": "hualqui",
+    "name": "HUALQUI",
+    "map": "https://maps.google.com/maps?q=Bombero%20Perret%2010%20Hualqui&t=m&z=17&output=embed&iwloc=near",
+    "disabled": false,
+    "wsp": "56999859327",
+    "address": "Bombero Perret 10 Hualqui",
+    "slug": "hualqui",
+    "phone": "56999859327",
+    "order": 5
+  },
+  {
+    "id": "lomas-coloradas",
+    "slug": "lomas-coloradas",
+    "address": "Los Mañios 7215, San Pedro",
+    "instagram": "https://www.instagram.com/lomoalemanlomas/",
+    "map": "https://maps.google.com/maps?q=Los%20Ma%C3%B1ios%207215%2C%20san%20pedro%20de%20la%20paz&t=m&z=15&output=embed&iwloc=near",
+    "phone": "56413215202",
+    "wsp": "56947333421",
+    "disabled": false,
+    "name": "Lomas Coloradas",
+    "order": 6
+  },
+  {
+    "id": "lomas-san-andres",
+    "map": "https://maps.google.com/maps?q=Alonso%20García%20de%20Ramón%20218%20Concepción&t=m&z=15&output=embed&iwloc=near",
+    "name": "LOMAS DE SAN ANDRES",
+    "disabled": false,
+    "address": "Alonso García de Ramón 218, Concepción",
+    "wsp": "56952273708",
+    "phone": "412480753",
+    "slug": "lomas-san-andres",
+    "order": 7
+  },
+  {
+    "id": "los-pioneros",
+    "phone": "412462450",
+    "wsp": "56957366212",
+    "disabled": false,
+    "name": "LOS PIONEROS",
+    "slug": "los-pioneros",
+    "address": "Tucapel 821, Los Pioneros",
+    "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/11/lomo_lospioneros_web.pdf",
+    "map": "https://maps.google.com/maps?q=Tucapel%20821%2C%20San%20Pedro%20de%20la%20Paz%2C%20B%C3%ADo%20B%C3%ADo&t=m&z=15&output=embed&iwloc=near",
+    "order": 8
+  },
+  {
+    "id": "lota",
+    "address": "Cousiño 503, Lota",
+    "phone": "56923633655",
+    "slug": "lota",
+    "name": "Lota",
+    "map": "https://maps.google.com/maps?q=Cousiño%20503%2C%20lota&t=m&z=15&output=embed&iwloc=near",
+    "disabled": false,
+    "order": 9
+  },
+  {
+    "id": "penco",
+    "disabled": false,
+    "name": "PENCO",
+    "map": "https://maps.google.com/maps?q=Maipu%2010%2C%20penco&t=m&z=15&output=embed&iwloc=near",
+    "slug": "penco",
+    "phone": "56940465717",
+    "wsp": "56940465717",
+    "address": "Maipú 10",
+    "order": 10
+  },
+  {
+    "id": "penco-km-5",
+    "slug": "penco-km-5",
+    "address": "Acceso Sur a Penco, Km5",
+    "wsp": "56961136969",
+    "disabled": false,
+    "name": "Penco KM5",
+    "map": "https://www.google.com/maps?q=-36.7593724,-73.0068213&z=18&output=embed",
+    "order": 11
+  },
+  {
+    "id": "san-pedro",
+    "slug": "san-pedro",
+    "phone": "56983376388",
+    "address": "Los peumos 27, Villa San Pedro",
+    "wsp": "56983376388",
+    "disabled": false,
+    "map": "https://maps.google.com/maps?q=Los%20Peumos%2027%2C%20San%20Pedro%20de%20la%20Paz&t=m&z=15&output=embed&iwloc=near",
+    "name": "San Pedro",
+    "order": 12
+  },
+  {
+    "id": "valle-noble",
+    "address": "Valle Noble 50, Concepción",
+    "wsp": "56989332394",
+    "slug": "valle-noble",
+    "map": "https://maps.google.com/maps?q=Valle%20Noble%2050%20Concepción&t=m&z=15&output=embed&iwloc=near",
+    "name": "Valle Noble",
+    "disabled": false,
+    "order": 13
+  },
+  {
+    "id": "villuco",
+    "disabled": false,
+    "name": "Villuco",
+    "map": "https://maps.google.com/maps?q=Camino%20A%20Chiguayante%204097%2C%20San%20Pedro%20de%20la%20Paz&t=m&z=15&output=embed&iwloc=near",
+    "phone": "56992485610",
+    "slug": "villuco",
+    "address": "Camino a Chiguayante 4097, Local B,  Villuco.",
+    "order": 14
+  }
+]

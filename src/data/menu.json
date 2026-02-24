@@ -1,0 +1,919 @@
+[
+  {
+    "title": "Sandwichs de la casa",
+    "subtitle": "Mechada - Pollo - Churrasco - Lomo cerdo Ahumado - Lomo centro",
+    "items": [
+      {
+        "variants": [],
+        "name": "Chiguayante",
+        "basePrice": 7900,
+        "imageUrl": null,
+        "description": "Cebollín, choclo, queso, palta y mayo.",
+        "order": 8
+      },
+      {
+        "description": "Pimentón, cebolla, queso, doble huevo, mayo.",
+        "name": "Pimentón",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "variants": [],
+        "order": 4
+      },
+      {
+        "description": "Tomate, palta, queso, lechuga y mayo.",
+        "variants": [],
+        "name": "Andalué",
+        "basePrice": 7900,
+        "imageUrl": null,
+        "order": 6
+      },
+      {
+        "description": "Chucrut, pepinillos, tomate y mayo.",
+        "basePrice": 7900,
+        "imageUrl": null,
+        "name": "Alemán",
+        "variants": [],
+        "order": 0
+      },
+      {
+        "variants": [],
+        "name": "Concepción",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "description": "Lechuga, tomate, cebolla morada, queso y mayo.",
+        "order": 5
+      },
+      {
+        "variants": [],
+        "name": "San Andrés",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "description": "Pepinillos, tocino, queso y mayo.",
+        "order": 7
+      },
+      {
+        "description": "Palta, doble huevo, queso, tocino y mayo.",
+        "variants": [],
+        "name": "La Martina",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "order": 3
+      },
+      {
+        "description": "Choclo, palta, y mayo.",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "name": "Irlandés",
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Lota",
+        "basePrice": 7900,
+        "imageUrl": null,
+        "variants": [],
+        "description": "Queso, aceitunas, tocino, mayo.",
+        "order": 9
+      },
+      {
+        "description": "Cebollín, queso, champiñón y mayo.",
+        "name": "Cebollín",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "variants": [],
+        "order": 2
+      },
+      {
+        "description": "Lomo ahumado, tomate caramelizado, rotkohl, pepinillo dill, salsa de mostaza miel y mayo.",
+        "name": "Germano",
+        "imageUrl": null,
+        "basePrice": 7900,
+        "variants": [],
+        "order": 12
+      },
+      {
+        "description": "Choclo, champiñón, queso y mayo.",
+        "variants": [],
+        "basePrice": 7900,
+        "imageUrl": null,
+        "name": "Champiñón",
+        "order": 11
+      },
+      {
+        "description": "Choclo, porotos verdes, cebolla frita, tomate, queso y mayo.",
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 7900,
+        "name": "Torre Alemana",
+        "order": 10
+      }
+    ],
+    "order": 0
+  },
+  {
+    "title": "Sandwichs",
+    "items": [
+      {
+        "basePrice": 7500,
+        "imageUrl": null,
+        "name": "Chacarero",
+        "variants": [],
+        "description": "Porotos verdes, tomate, mayo.",
+        "order": 2
+      },
+      {
+        "description": "Chucrut, tomate, mayo.",
+        "name": "Completo",
+        "imageUrl": null,
+        "basePrice": 7500,
+        "variants": [],
+        "order": 4
+      },
+      {
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 7500,
+        "name": "Pobre",
+        "description": "Queso, cebolla frita, doble huevo, mayo.",
+        "order": 7
+      },
+      {
+        "imageUrl": null,
+        "basePrice": 7500,
+        "name": "Patrón",
+        "variants": [],
+        "description": "Queso, tomate, choclo, mayo.",
+        "order": 0
+      },
+      {
+        "description": "Carne, queso.",
+        "variants": [],
+        "name": "Barros Luco",
+        "basePrice": 7500,
+        "imageUrl": null,
+        "order": 5
+      },
+      {
+        "variants": [],
+        "basePrice": 7500,
+        "imageUrl": null,
+        "name": "Italiano",
+        "description": "Tomate, palta, mayo.",
+        "order": 6
+      },
+      {
+        "variants": [],
+        "name": "Diplomático",
+        "basePrice": 7500,
+        "imageUrl": null,
+        "description": "Queso, doble huevo, mayo.",
+        "order": 1
+      },
+      {
+        "name": "Luco Palta",
+        "basePrice": 7500,
+        "imageUrl": null,
+        "variants": [],
+        "description": "Palta, queso.",
+        "order": 3
+      },
+      {
+        "variants": [],
+        "basePrice": 6500,
+        "imageUrl": null,
+        "name": "Sandwich solo",
+        "description": "Carne.",
+        "order": 8
+      }
+    ],
+    "subtitle": "Mechada - Pollo - Churrasco - Lomo cerdo Ahumado - Lomo centro",
+    "order": 3
+  },
+  {
+    "title": "Hamburguesas",
+    "items": [
+      {
+        "variants": [],
+        "name": "Kansas",
+        "basePrice": 8900,
+        "imageUrl": null,
+        "description": "Pepinillo Dill, tocino, queso y mayo.",
+        "order": 6
+      },
+      {
+        "description": "Primer piso: Hamburguesas, queso, cebolla morada, lechuga y pepinillo. Segundo Piso: Hamburguesa, tomate, mayo y palta.",
+        "name": "La Big Gorda",
+        "basePrice": 10990,
+        "imageUrl": null,
+        "variants": [],
+        "order": 8
+      },
+      {
+        "description": "Queso, lechuga, cebolla morada, tomate, pepinillo, mayo.",
+        "name": "Gringa",
+        "imageUrl": null,
+        "basePrice": 8900,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "variants": [],
+        "name": "Texas",
+        "basePrice": 8900,
+        "imageUrl": null,
+        "description": "Cebolla caramelizada, tocino, queso, salsa BBQ, pepinillos y mayo.",
+        "order": 5
+      },
+      {
+        "basePrice": 8900,
+        "imageUrl": null,
+        "name": "Italiana",
+        "variants": [],
+        "description": "Queso, tomate, palta y mayo.",
+        "order": 4
+      },
+      {
+        "description": "Cheddar, cebolla cruda, tocino y mayo. (BBQ opcional).",
+        "variants": [],
+        "name": "Americana",
+        "imageUrl": null,
+        "basePrice": 8900,
+        "order": 7
+      },
+      {
+        "description": "Tocino, queso, champiñones, pepinillo y mayo.",
+        "variants": [],
+        "basePrice": 8900,
+        "imageUrl": null,
+        "name": "Bacon",
+        "order": 1
+      },
+      {
+        "name": "Alemana",
+        "imageUrl": null,
+        "basePrice": 8900,
+        "variants": [],
+        "description": "Queso, morrón, cebolla morada, tocino, huevo doble y mayo.",
+        "order": 3
+      },
+      {
+        "description": "Palta, queso, tocino, cebolla morada y mayo.",
+        "name": "Avocado",
+        "imageUrl": null,
+        "basePrice": 8900,
+        "variants": [],
+        "order": 2
+      }
+    ],
+    "subtitle": "Todas incluyen papas fritas y doble queso",
+    "order": 5
+  },
+  {
+    "subtitle": null,
+    "items": [
+      {
+        "description": "Carne mechada, morrón, champiñones, tocino, salsa BBQ, cebolla salteada y queso.",
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 14500,
+        "name": "Berlín",
+        "order": 5
+      },
+      {
+        "description": "Ingrediente extra para pizza.",
+        "variants": [],
+        "name": "Extra: Vegetales",
+        "basePrice": 2500,
+        "imageUrl": null,
+        "order": 14
+      },
+      {
+        "description": "Carne de lomo, piña, tocino y queso.",
+        "variants": [],
+        "name": "Bremen",
+        "basePrice": 12500,
+        "imageUrl": null,
+        "order": 7
+      },
+      {
+        "basePrice": 12500,
+        "imageUrl": null,
+        "name": "Kiel",
+        "variants": [],
+        "description": "5 vegetales a elección y queso.",
+        "order": 9
+      },
+      {
+        "description": "Ingrediente extra para pizza.",
+        "variants": [],
+        "name": "Extra: Camarón",
+        "imageUrl": null,
+        "basePrice": 5500,
+        "order": 19
+      },
+      {
+        "variants": [],
+        "name": "Chilena",
+        "basePrice": 13500,
+        "imageUrl": null,
+        "description": "Carne, tomate, cebolla, aceituna, queso.",
+        "order": 1
+      },
+      {
+        "description": "Pollo, morrón, choclo y queso.",
+        "name": "Rostock",
+        "basePrice": 13500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 11
+      },
+      {
+        "description": "Jamón tomate al pesto, aceituna, queso.",
+        "variants": [],
+        "name": "Napolitana",
+        "basePrice": 13500,
+        "imageUrl": null,
+        "order": 0
+      },
+      {
+        "name": "Pollona",
+        "imageUrl": null,
+        "basePrice": 13500,
+        "variants": [],
+        "description": "Pollo, crema, choclo, champiñón, queso.",
+        "order": 2
+      },
+      {
+        "variants": [],
+        "name": "Romana",
+        "basePrice": 14500,
+        "imageUrl": null,
+        "description": "Pollo al pesto, choclo, palmitos, palta y queso.",
+        "order": 10
+      },
+      {
+        "description": "Ingrediente extra para pizza.",
+        "variants": [],
+        "basePrice": 4000,
+        "imageUrl": null,
+        "name": "Extra: Carnes",
+        "order": 16
+      },
+      {
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 13500,
+        "name": "Árabe",
+        "description": "Carne al limón, cebolla, doble queso.",
+        "order": 3
+      },
+      {
+        "name": "Múnich",
+        "imageUrl": null,
+        "basePrice": 10500,
+        "variants": [],
+        "description": "Queso, pesto, salsa napolitana (salsa de tomate, tomates en cubos, pimienta, un toque de vino blanco y un toque de azúcar).",
+        "order": 4
+      },
+      {
+        "imageUrl": null,
+        "basePrice": 2500,
+        "name": "Extra: Pepperoni",
+        "variants": [],
+        "description": "Ingrediente extra para pizza.",
+        "order": 18
+      },
+      {
+        "description": "Ingrediente extra para pizza.",
+        "name": "Extra: Queso",
+        "basePrice": 2500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 17
+      },
+      {
+        "variants": [],
+        "basePrice": 12500,
+        "imageUrl": null,
+        "name": "Essen",
+        "description": "Pepperoni, doble queso, salsa napolitana (salsa de tomate, tomate en cubos, pimienta, un toque de vino y azúcar).",
+        "order": 6
+      },
+      {
+        "description": "Salsa blanca, camarones ecuatorianos, machas, queso y un toque de perejil ajo.",
+        "name": "Hamburgo",
+        "imageUrl": null,
+        "basePrice": 16000,
+        "variants": [],
+        "order": 8
+      },
+      {
+        "description": "Salsa BBQ, pollo, tocino, queso y cebolla morada.",
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 13500,
+        "name": "Pollo BBQ",
+        "order": 12
+      },
+      {
+        "name": "Extra: Tocino",
+        "basePrice": 4000,
+        "imageUrl": null,
+        "variants": [],
+        "description": "Ingrediente extra para pizza.",
+        "order": 15
+      },
+      {
+        "description": "1 proteína (mechada, pollo, churrasco, pepperoni, atún, lomo ahumado), 3 vegetales, 1 salsa y queso.",
+        "imageUrl": null,
+        "basePrice": 14500,
+        "name": "Arma tu pizza",
+        "variants": [],
+        "order": 13
+      }
+    ],
+    "title": "Pizzas",
+    "order": 21
+  },
+  {
+    "title": "Saludables",
+    "items": [
+      {
+        "basePrice": 6900,
+        "imageUrl": null,
+        "name": "Sandwich vegetariano",
+        "variants": [],
+        "description": "5 vegetales a elección.",
+        "order": 2
+      },
+      {
+        "name": "Ensalada del campo",
+        "imageUrl": null,
+        "basePrice": 6900,
+        "variants": [],
+        "description": "Lechuga, palta, choclo, champiñón, palmitos, pollo y salsa de yogurt.",
+        "order": 0
+      },
+      {
+        "description": "Lomo ahumado, tomate, aceituna, queso, lechuga y salsa de yogurt.",
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 6900,
+        "name": "Ensalada mediterránea",
+        "order": 1
+      },
+      {
+        "description": "1 Proteína + base lechuga + 3 vegetales (Proteína: Huevo, carne, pollo, atún, lomo). Vegetales disponibles en sección agregados.",
+        "variants": [],
+        "name": "Arma tu ensalada",
+        "imageUrl": null,
+        "basePrice": 6900,
+        "order": 3
+      }
+    ],
+    "subtitle": null,
+    "order": 1
+  },
+  {
+    "subtitle": null,
+    "items": [
+      {
+        "variants": [],
+        "name": "Pollo Pobre",
+        "imageUrl": null,
+        "basePrice": 7500,
+        "description": "Pechuga de pollo a la plancha acompañadas de papas fritas, cebolla caramelizada, huevos fritos (también disponible en opción ensalada).",
+        "order": 1
+      },
+      {
+        "description": "Medallón de lomo ahumado con papas fritas, cebolla caramelizada y huevo frito (también disponible opción ensalada).",
+        "imageUrl": null,
+        "basePrice": 8500,
+        "name": "Lomo a lo Pobre",
+        "variants": [],
+        "order": 0
+      }
+    ],
+    "title": "Almuerzo Ejecutivo",
+    "order": 2
+  },
+  {
+    "items": [
+      {
+        "basePrice": 7500,
+        "imageUrl": null,
+        "name": "Nuggets + Papas fritas",
+        "variants": [],
+        "description": null,
+        "order": 8
+      },
+      {
+        "basePrice": 12000,
+        "imageUrl": null,
+        "name": "Papas Mechada",
+        "variants": [
+          {
+            "name": "Chica",
+            "price": 12000
+          },
+          {
+            "name": "Grande",
+            "price": 17000
+          }
+        ],
+        "description": "Base de papas fritas, salsa de queso, carne mechada, champiñón, cebollín y morrón.",
+        "order": 3
+      },
+      {
+        "variants": [
+          {
+            "name": "Chica",
+            "price": 12000
+          },
+          {
+            "name": "Grande",
+            "price": 17000
+          }
+        ],
+        "basePrice": 12000,
+        "imageUrl": null,
+        "name": "Papas Champiñón",
+        "description": "Base de papas fritas, acompañadas de pollo y salsa de champiñón.",
+        "order": 5
+      },
+      {
+        "basePrice": 12000,
+        "imageUrl": null,
+        "name": "Pichanga",
+        "variants": [
+          {
+            "name": "Chica",
+            "price": 12000
+          },
+          {
+            "name": "Grande",
+            "price": 17000
+          }
+        ],
+        "description": "Base de papas fritas, acompañadas con vienesas, pollo, carne, tomate, palta, huevo doble, queso, aceitunas y pepinillos.",
+        "order": 1
+      },
+      {
+        "description": "Base de papas fritas, acompañadas con tocino, salsa cheddar y salsa ácida.",
+        "variants": [
+          {
+            "name": "Chica",
+            "price": 9000
+          },
+          {
+            "price": 13000,
+            "name": "Grande"
+          }
+        ],
+        "imageUrl": null,
+        "basePrice": 9000,
+        "name": "Cheddar Bacon",
+        "order": 6
+      },
+      {
+        "name": "Salchipapas",
+        "basePrice": 6000,
+        "imageUrl": null,
+        "variants": [],
+        "description": "Papas fritas, vienesas Llanquihue.",
+        "order": 7
+      },
+      {
+        "description": "Aros de cebolla, papas fritas y empanadas de queso.",
+        "variants": [
+          {
+            "name": "Chica",
+            "price": 5500
+          },
+          {
+            "name": "Grande",
+            "price": 7500
+          }
+        ],
+        "imageUrl": null,
+        "basePrice": 5500,
+        "name": "Canasto Frito",
+        "order": 4
+      },
+      {
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 17000,
+        "name": "Papas Marinas",
+        "description": "Base de papas fritas, salsa de queso, machas, camarón y un toque de cilantro o perejil.",
+        "order": 0
+      },
+      {
+        "imageUrl": null,
+        "basePrice": 12000,
+        "name": "Chorrillanas",
+        "variants": [
+          {
+            "name": "Chica",
+            "price": 12000
+          },
+          {
+            "price": 17000,
+            "name": "Grande"
+          }
+        ],
+        "description": "Base de papas fritas, acompañadas con carne, choricillos, huevos fritos y cebolla caramelizada.",
+        "order": 2
+      }
+    ],
+    "subtitle": null,
+    "title": "Para Compartir",
+    "order": 6
+  },
+  {
+    "items": [
+      {
+        "name": "As",
+        "basePrice": 3900,
+        "imageUrl": null,
+        "variants": [],
+        "description": "Italiano, irlandés, luco (mechada, pollo, churrasco, lomo).",
+        "order": 9
+      },
+      {
+        "description": "Rotkohl, alemana, mayo.",
+        "variants": [],
+        "name": "Germano",
+        "basePrice": 3700,
+        "imageUrl": null,
+        "order": 7
+      },
+      {
+        "basePrice": 3100,
+        "imageUrl": null,
+        "name": "Tradicional",
+        "variants": [],
+        "description": "Chucrut, alemana, mayo.",
+        "order": 2
+      },
+      {
+        "variants": [],
+        "name": "Irlandés",
+        "imageUrl": null,
+        "basePrice": 3300,
+        "description": "Palta, choclo, mayo.",
+        "order": 5
+      },
+      {
+        "description": "Tomate, queso, aceitunas, orégano, mayo (mechada, pollo, churrasco, lomo).",
+        "imageUrl": null,
+        "basePrice": 3900,
+        "name": "As Napolitano",
+        "variants": [],
+        "order": 10
+      },
+      {
+        "variants": [],
+        "name": "Rotkohl",
+        "imageUrl": null,
+        "basePrice": 3600,
+        "description": "Rotkohl, mayo.",
+        "order": 8
+      },
+      {
+        "imageUrl": null,
+        "basePrice": 3200,
+        "name": "Criollo",
+        "variants": [],
+        "description": "Salsa verde, tomate, mayo.",
+        "order": 1
+      },
+      {
+        "variants": [],
+        "name": "Luco",
+        "imageUrl": null,
+        "basePrice": 3400,
+        "description": "Triple queso.",
+        "order": 6
+      },
+      {
+        "basePrice": 3400,
+        "imageUrl": null,
+        "name": "Dinámico",
+        "variants": [],
+        "description": "Chucrut, tomate, palta, mayo.",
+        "order": 4
+      },
+      {
+        "description": "Chucrut, mayo.",
+        "variants": [],
+        "name": "Alemán",
+        "basePrice": 2900,
+        "imageUrl": null,
+        "order": 0
+      },
+      {
+        "basePrice": 3300,
+        "imageUrl": null,
+        "name": "Italiano",
+        "variants": [],
+        "description": "Palta, tomate, mayo.",
+        "order": 3
+      }
+    ],
+    "subtitle": null,
+    "title": "Completos",
+    "order": 4
+  },
+  {
+    "title": "Agregados",
+    "subtitle": null,
+    "items": [
+      {
+        "description": null,
+        "imageUrl": null,
+        "basePrice": 3000,
+        "name": "Extra carne",
+        "variants": [],
+        "order": 5
+      },
+      {
+        "description": null,
+        "basePrice": 600,
+        "imageUrl": null,
+        "name": "Salsa verde",
+        "variants": [],
+        "order": 1
+      },
+      {
+        "description": null,
+        "variants": [],
+        "name": "Tocino",
+        "basePrice": 1500,
+        "imageUrl": null,
+        "order": 4
+      },
+      {
+        "description": null,
+        "name": "Aros de cebolla",
+        "basePrice": 1500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 3
+      },
+      {
+        "imageUrl": null,
+        "basePrice": 1000,
+        "name": "Otros",
+        "variants": [],
+        "description": "Choclo, Tomate, Porotos verdes, Huevo frito, Chucrut, Cebolla frita, Palta, Queso, Pepinillo salado, Lechuga, Cebollín, Pimentón, Aceitunas, Palmitos, Cebolla morada, Huevo duro, Rotkohl.",
+        "order": 7
+      },
+      {
+        "description": null,
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 650,
+        "name": "Mayonesa",
+        "order": 0
+      },
+      {
+        "variants": [],
+        "name": "Pepinillo agridulce",
+        "basePrice": 1000,
+        "imageUrl": null,
+        "description": null,
+        "order": 2
+      },
+      {
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 0,
+        "name": "Ají verde o ahumado",
+        "description": "Gratis.",
+        "order": 8
+      },
+      {
+        "name": "Empanadas de queso",
+        "basePrice": 1990,
+        "imageUrl": null,
+        "variants": [],
+        "description": "6 unidades.",
+        "order": 6
+      }
+    ],
+    "order": 7
+  },
+  {
+    "title": "Papas Fritas",
+    "subtitle": null,
+    "items": [
+      {
+        "variants": [],
+        "basePrice": 3000,
+        "imageUrl": null,
+        "name": "Nuggets de Pollo",
+        "description": "10 Unidades.",
+        "order": 1
+      },
+      {
+        "description": "Chica.",
+        "variants": [
+          {
+            "price": 5000,
+            "name": "Mediana"
+          },
+          {
+            "price": 6000,
+            "name": "Grande"
+          },
+          {
+            "price": 8000,
+            "name": "1 Kilo"
+          },
+          {
+            "name": "Chica",
+            "price": 3000
+          }
+        ],
+        "imageUrl": null,
+        "basePrice": 0,
+        "name": "Papas fritas",
+        "order": 0
+      }
+    ],
+    "order": 9
+  },
+  {
+    "items": [
+      {
+        "description": null,
+        "variants": [],
+        "name": "Café o Té",
+        "imageUrl": null,
+        "basePrice": 1500,
+        "order": 3
+      },
+      {
+        "name": "Bebidas 1,5lt. Delivery",
+        "basePrice": 2500,
+        "imageUrl": null,
+        "variants": [],
+        "description": null,
+        "order": 1
+      },
+      {
+        "variants": [],
+        "imageUrl": null,
+        "basePrice": 3500,
+        "name": "Limonada",
+        "description": "Menta jengibre.",
+        "order": 5
+      },
+      {
+        "name": "Bebidas",
+        "basePrice": 1600,
+        "imageUrl": null,
+        "variants": [
+          {
+            "price": 1600,
+            "name": "350cc"
+          },
+          {
+            "price": 1800,
+            "name": "500cc"
+          }
+        ],
+        "order": 0
+      },
+      {
+        "variants": [
+          {
+            "price": 1700,
+            "name": "x1"
+          },
+          {
+            "price": 3000,
+            "name": "x2"
+          }
+        ],
+        "name": "Redbull",
+        "imageUrl": null,
+        "basePrice": 1700,
+        "description": null,
+        "order": 2
+      },
+      {
+        "basePrice": 3000,
+        "imageUrl": null,
+        "name": "Jugo Natural",
+        "variants": [],
+        "description": null,
+        "order": 4
+      }
+    ],
+    "subtitle": null,
+    "title": "Líquidos",
+    "order": 8
+  }
+]
