@@ -20,10 +20,10 @@ const menu = menuData
     <!-- <pre>{JSON.stringify(menu, null, 2)}</pre> -->
 
     {menu && menu.length > 0 ? (
-      <div class="grid md:grid-cols-4 gap-4">
+      <div class="columns-1 md:columns-2 lg:columns-4 gap-4">
         {
           menu.map((section: any) => (
-            <section class="border-2 border-neutral-700 p-3 rounded">
+            <section class="break-inside-avoid mb-4 border-2 border-neutral-700 p-3 rounded">
               <header class="mb-4">
                 <h2 class="text-amber-600 text-2xl font-semibold">
                   {section.title}
