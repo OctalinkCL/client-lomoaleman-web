@@ -10,6 +10,7 @@ export default defineConfig({
   integrations: [tailwind()],
   redirects: {
     "/locales/menu-ruta-litoral": "/menu",
+    "/wordpress/wp-content/uploads/2023/12/carta_colon.pdf": "/wp-content/uploads/2023/12/carta_colon.pdf",
   },
   build: {
     assets: "_astro",
