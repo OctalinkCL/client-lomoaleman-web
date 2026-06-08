@@ -1,5 +1,15 @@
 [
   {
+    "id": "quillon",
+    "address": "Plaza San Francisco Los Almendros 40 Local 3 Quillón",
+    "wsp": "56979614583",
+    "slug": "quillon",
+    "map": "https://maps.google.com/maps?q=-36.7392887,-72.4567917&t=m&z=18&output=embed&iwloc=near",
+    "name": "Quillón",
+    "disabled": false,
+    "order": 2
+  },
+  {
     "id": "arauco",
     "slug": "arauco",
     "phone": "56931201361",
