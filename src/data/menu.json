@@ -6,7 +6,7 @@
       {
         "variants": [],
         "name": "Chiguayante",
-        "basePrice": 7900,
+        "basePrice": 7990,
         "imageUrl": null,
         "description": "Cebollín, choclo, queso, palta y mayo.",
         "order": 8
@@ -15,7 +15,7 @@
         "description": "Pimentón, cebolla, queso, doble huevo, mayo.",
         "name": "Pimentón",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "variants": [],
         "order": 4
       },
@@ -23,13 +23,13 @@
         "description": "Tomate, palta, queso, lechuga y mayo.",
         "variants": [],
         "name": "Andalué",
-        "basePrice": 7900,
+        "basePrice": 7990,
         "imageUrl": null,
         "order": 6
       },
       {
         "description": "Chucrut, pepinillos, tomate y mayo.",
-        "basePrice": 7900,
+        "basePrice": 7990,
         "imageUrl": null,
         "name": "Alemán",
         "variants": [],
@@ -39,7 +39,7 @@
         "variants": [],
         "name": "Concepción",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "description": "Lechuga, tomate, cebolla morada, queso y mayo.",
         "order": 5
       },
@@ -56,20 +56,20 @@
         "variants": [],
         "name": "La Martina",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "order": 3
       },
       {
         "description": "Choclo, palta, y mayo.",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "name": "Irlandés",
         "variants": [],
         "order": 1
       },
       {
         "name": "Lota",
-        "basePrice": 7900,
+        "basePrice": 7990,
         "imageUrl": null,
         "variants": [],
         "description": "Queso, aceitunas, tocino, mayo.",
@@ -87,14 +87,14 @@
         "description": "Lomo ahumado, tomate caramelizado, rotkohl, pepinillo dill, salsa de mostaza miel y mayo.",
         "name": "Germano",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "variants": [],
         "order": 12
       },
       {
         "description": "Choclo, champiñón, queso y mayo.",
         "variants": [],
-        "basePrice": 7900,
+        "basePrice": 7990,
         "imageUrl": null,
         "name": "Champiñón",
         "order": 11
@@ -103,7 +103,7 @@
         "description": "Choclo, porotos verdes, cebolla frita, tomate, queso y mayo.",
         "variants": [],
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "name": "Torre Alemana",
         "order": 10
       }
@@ -114,7 +114,7 @@
     "title": "Sandwichs",
     "items": [
       {
-        "basePrice": 7500,
+        "basePrice": 7900,
         "imageUrl": null,
         "name": "Chacarero",
         "variants": [],
@@ -125,21 +125,21 @@
         "description": "Chucrut, tomate, mayo.",
         "name": "Completo",
         "imageUrl": null,
-        "basePrice": 7500,
+        "basePrice": 7990,
         "variants": [],
         "order": 4
       },
       {
         "variants": [],
         "imageUrl": null,
-        "basePrice": 7500,
+        "basePrice": 7900,
         "name": "Pobre",
         "description": "Queso, cebolla frita, doble huevo, mayo.",
         "order": 7
       },
       {
         "imageUrl": null,
-        "basePrice": 7500,
+        "basePrice": 7900,
         "name": "Patrón",
         "variants": [],
         "description": "Queso, tomate, choclo, mayo.",
@@ -149,13 +149,13 @@
         "description": "Carne, queso.",
         "variants": [],
         "name": "Barros Luco",
-        "basePrice": 7500,
+        "basePrice": 7900,
         "imageUrl": null,
         "order": 5
       },
       {
         "variants": [],
-        "basePrice": 7500,
+        "basePrice": 7900,
         "imageUrl": null,
         "name": "Italiano",
         "description": "Tomate, palta, mayo.",
@@ -164,14 +164,14 @@
       {
         "variants": [],
         "name": "Diplomático",
-        "basePrice": 7500,
+        "basePrice": 7900,
         "imageUrl": null,
         "description": "Queso, doble huevo, mayo.",
         "order": 1
       },
       {
         "name": "Luco Palta",
-        "basePrice": 7500,
+        "basePrice": 7900,
         "imageUrl": null,
         "variants": [],
         "description": "Palta, queso.",
@@ -275,7 +275,7 @@
         "description": "Carne mechada, morrón, champiñones, tocino, salsa BBQ, cebolla salteada y queso.",
         "variants": [],
         "imageUrl": null,
-        "basePrice": 14500,
+        "basePrice": 15500,
         "name": "Berlín",
         "order": 5
       },
@@ -291,12 +291,12 @@
         "description": "Carne de lomo, piña, tocino y queso.",
         "variants": [],
         "name": "Bremen",
-        "basePrice": 12500,
+        "basePrice": 13500,
         "imageUrl": null,
         "order": 7
       },
       {
-        "basePrice": 12500,
+        "basePrice": 13500,
         "imageUrl": null,
         "name": "Kiel",
         "variants": [],
@@ -314,7 +314,7 @@
       {
         "variants": [],
         "name": "Chilena",
-        "basePrice": 13500,
+        "basePrice": 14500,
         "imageUrl": null,
         "description": "Carne, tomate, cebolla, aceituna, queso.",
         "order": 1
@@ -322,7 +322,7 @@
       {
         "description": "Pollo, morrón, choclo y queso.",
         "name": "Rostock",
-        "basePrice": 13500,
+        "basePrice": 14000,
         "imageUrl": null,
         "variants": [],
         "order": 11
@@ -331,14 +331,14 @@
         "description": "Jamón tomate al pesto, aceituna, queso.",
         "variants": [],
         "name": "Napolitana",
-        "basePrice": 13500,
+        "basePrice": 14500,
         "imageUrl": null,
         "order": 0
       },
       {
         "name": "Pollona",
         "imageUrl": null,
-        "basePrice": 13500,
+        "basePrice": 14500,
         "variants": [],
         "description": "Pollo, crema, choclo, champiñón, queso.",
         "order": 2
@@ -346,7 +346,7 @@
       {
         "variants": [],
         "name": "Romana",
-        "basePrice": 14500,
+        "basePrice": 15500,
         "imageUrl": null,
         "description": "Pollo al pesto, choclo, palmitos, palta y queso.",
         "order": 10
@@ -362,7 +362,7 @@
       {
         "variants": [],
         "imageUrl": null,
-        "basePrice": 13500,
+        "basePrice": 14500,
         "name": "Árabe",
         "description": "Carne al limón, cebolla, doble queso.",
         "order": 3
@@ -370,7 +370,7 @@
       {
         "name": "Múnich",
         "imageUrl": null,
-        "basePrice": 10500,
+        "basePrice": 11500,
         "variants": [],
         "description": "Queso, pesto, salsa napolitana (salsa de tomate, tomates en cubos, pimienta, un toque de vino blanco y un toque de azúcar).",
         "order": 4
@@ -393,7 +393,7 @@
       },
       {
         "variants": [],
-        "basePrice": 12500,
+        "basePrice": 13500,
         "imageUrl": null,
         "name": "Essen",
         "description": "Pepperoni, doble queso, salsa napolitana (salsa de tomate, tomate en cubos, pimienta, un toque de vino y azúcar).",
@@ -403,7 +403,7 @@
         "description": "Salsa blanca, camarones ecuatorianos, machas, queso y un toque de perejil ajo.",
         "name": "Hamburgo",
         "imageUrl": null,
-        "basePrice": 16000,
+        "basePrice": 17000,
         "variants": [],
         "order": 8
       },
@@ -426,7 +426,7 @@
       {
         "description": "1 proteína (mechada, pollo, churrasco, pepperoni, atún, lomo ahumado), 3 vegetales, 1 salsa y queso.",
         "imageUrl": null,
-        "basePrice": 14500,
+        "basePrice": 15500,
         "name": "Arma tu pizza",
         "variants": [],
         "order": 13
@@ -481,7 +481,7 @@
         "variants": [],
         "name": "Pollo Pobre",
         "imageUrl": null,
-        "basePrice": 7500,
+        "basePrice": 7900,
         "description": "Pechuga de pollo a la plancha acompañadas de papas fritas, cebolla caramelizada, huevos fritos (también disponible en opción ensalada).",
         "order": 1
       },
@@ -500,7 +500,7 @@
   {
     "items": [
       {
-        "basePrice": 7500,
+        "basePrice": 7990,
         "imageUrl": null,
         "name": "Nuggets + Papas fritas",
         "variants": [],
@@ -508,17 +508,17 @@
         "order": 8
       },
       {
-        "basePrice": 12000,
+        "basePrice": 13000,
         "imageUrl": null,
         "name": "Papas Mechada",
         "variants": [
           {
             "name": "Chica",
-            "price": 12000
+            "price": 13000
           },
           {
             "name": "Grande",
-            "price": 17000
+            "price": 19000
           }
         ],
         "description": "Base de papas fritas, salsa de queso, carne mechada, champiñón, cebollín y morrón.",
@@ -528,31 +528,31 @@
         "variants": [
           {
             "name": "Chica",
-            "price": 12000
+            "price": 13000
           },
           {
             "name": "Grande",
-            "price": 17000
+            "price": 19000
           }
         ],
-        "basePrice": 12000,
+        "basePrice": 13000,
         "imageUrl": null,
         "name": "Papas Champiñón",
         "description": "Base de papas fritas, acompañadas de pollo y salsa de champiñón.",
         "order": 5
       },
       {
-        "basePrice": 12000,
+        "basePrice": 13000,
         "imageUrl": null,
         "name": "Pichanga",
         "variants": [
           {
             "name": "Chica",
-            "price": 12000
+            "price": 13000
           },
           {
             "name": "Grande",
-            "price": 17000
+            "price": 19000
           }
         ],
         "description": "Base de papas fritas, acompañadas con vienesas, pollo, carne, tomate, palta, huevo doble, queso, aceitunas y pepinillos.",
@@ -563,21 +563,21 @@
         "variants": [
           {
             "name": "Chica",
-            "price": 9000
+            "price": 10000
           },
           {
-            "price": 13000,
+            "price": 15000,
             "name": "Grande"
           }
         ],
         "imageUrl": null,
-        "basePrice": 9000,
+        "basePrice": 10000,
         "name": "Cheddar Bacon",
         "order": 6
       },
       {
         "name": "Salchipapas",
-        "basePrice": 6000,
+        "basePrice": 7000,
         "imageUrl": null,
         "variants": [],
         "description": "Papas fritas, vienesas Llanquihue.",
@@ -588,37 +588,37 @@
         "variants": [
           {
             "name": "Chica",
-            "price": 5500
+            "price": 6500
           },
           {
             "name": "Grande",
-            "price": 7500
+            "price": 7990
           }
         ],
         "imageUrl": null,
-        "basePrice": 5500,
+        "basePrice": 6500,
         "name": "Canasto Frito",
         "order": 4
       },
       {
         "variants": [],
         "imageUrl": null,
-        "basePrice": 17000,
+        "basePrice": 19000,
         "name": "Papas Marinas",
         "description": "Base de papas fritas, salsa de queso, machas, camarón y un toque de cilantro o perejil.",
         "order": 0
       },
       {
         "imageUrl": null,
-        "basePrice": 12000,
+        "basePrice": 13000,
         "name": "Chorrillanas",
         "variants": [
           {
             "name": "Chica",
-            "price": 12000
+            "price": 13000
           },
           {
-            "price": 17000,
+            "price": 19000,
             "name": "Grande"
           }
         ],
@@ -634,7 +634,7 @@
     "items": [
       {
         "name": "As",
-        "basePrice": 3900,
+        "basePrice": 4100,
         "imageUrl": null,
         "variants": [],
         "description": "Italiano, irlandés, luco (mechada, pollo, churrasco, lomo).",
@@ -644,12 +644,12 @@
         "description": "Rotkohl, alemana, mayo.",
         "variants": [],
         "name": "Germano",
-        "basePrice": 3700,
+        "basePrice": 3900,
         "imageUrl": null,
         "order": 7
       },
       {
-        "basePrice": 3100,
+        "basePrice": 3300,
         "imageUrl": null,
         "name": "Tradicional",
         "variants": [],
@@ -660,14 +660,14 @@
         "variants": [],
         "name": "Irlandés",
         "imageUrl": null,
-        "basePrice": 3300,
+        "basePrice": 3500,
         "description": "Palta, choclo, mayo.",
         "order": 5
       },
       {
         "description": "Tomate, queso, aceitunas, orégano, mayo (mechada, pollo, churrasco, lomo).",
         "imageUrl": null,
-        "basePrice": 3900,
+        "basePrice": 4100,
         "name": "As Napolitano",
         "variants": [],
         "order": 10
@@ -676,13 +676,13 @@
         "variants": [],
         "name": "Rotkohl",
         "imageUrl": null,
-        "basePrice": 3600,
+        "basePrice": 3800,
         "description": "Rotkohl, mayo.",
         "order": 8
       },
       {
         "imageUrl": null,
-        "basePrice": 3200,
+        "basePrice": 3400,
         "name": "Criollo",
         "variants": [],
         "description": "Salsa verde, tomate, mayo.",
@@ -692,12 +692,12 @@
         "variants": [],
         "name": "Luco",
         "imageUrl": null,
-        "basePrice": 3400,
+        "basePrice": 3600,
         "description": "Triple queso.",
         "order": 6
       },
       {
-        "basePrice": 3400,
+        "basePrice": 3600,
         "imageUrl": null,
         "name": "Dinámico",
         "variants": [],
@@ -708,12 +708,12 @@
         "description": "Chucrut, mayo.",
         "variants": [],
         "name": "Alemán",
-        "basePrice": 2900,
+        "basePrice": 3100,
         "imageUrl": null,
         "order": 0
       },
       {
-        "basePrice": 3300,
+        "basePrice": 3500,
         "imageUrl": null,
         "name": "Italiano",
         "variants": [],
@@ -810,7 +810,7 @@
     "items": [
       {
         "variants": [],
-        "basePrice": 3000,
+        "basePrice": 3500,
         "imageUrl": null,
         "name": "Nuggets de Pollo",
         "description": "10 Unidades.",
