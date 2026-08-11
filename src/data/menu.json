@@ -876,6 +876,10 @@
         "imageUrl": null,
         "variants": [
           {
+            "price": 1200,
+            "name": "250cc"
+          },
+          {
             "price": 1600,
             "name": "350cc"
           },
@@ -899,7 +903,7 @@
         ],
         "name": "Redbull",
         "imageUrl": null,
-        "basePrice": 1700,
+        "basePrice": 1900,
         "description": null,
         "order": 2
       },
