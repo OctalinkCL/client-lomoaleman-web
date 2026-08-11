@@ -893,12 +893,8 @@
       {
         "variants": [
           {
-            "price": 1700,
+            "price": 1900,
             "name": "x1"
-          },
-          {
-            "price": 3000,
-            "name": "x2"
           }
         ],
         "name": "Redbull",
