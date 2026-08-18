@@ -47,7 +47,7 @@
         "variants": [],
         "name": "San Andrés",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "description": "Pepinillos, tocino, queso y mayo.",
         "order": 7
       },
@@ -79,7 +79,7 @@
         "description": "Cebollín, queso, champiñón y mayo.",
         "name": "Cebollín",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7990,
         "variants": [],
         "order": 2
       },
@@ -125,7 +125,7 @@
         "description": "Chucrut, tomate, mayo.",
         "name": "Completo",
         "imageUrl": null,
-        "basePrice": 7990,
+        "basePrice": 7900,
         "variants": [],
         "order": 4
       },
@@ -322,7 +322,7 @@
       {
         "description": "Pollo, morrón, choclo y queso.",
         "name": "Rostock",
-        "basePrice": 14000,
+        "basePrice": 14500,
         "imageUrl": null,
         "variants": [],
         "order": 11
@@ -411,7 +411,7 @@
         "description": "Salsa BBQ, pollo, tocino, queso y cebolla morada.",
         "variants": [],
         "imageUrl": null,
-        "basePrice": 13500,
+        "basePrice": 14500,
         "name": "Pollo BBQ",
         "order": 12
       },
@@ -479,9 +479,9 @@
     "items": [
       {
         "variants": [],
-        "name": "Pollo Pobre",
+        "name": "Pollo a lo Pobre",
         "imageUrl": null,
-        "basePrice": 7900,
+        "basePrice": 7500,
         "description": "Pechuga de pollo a la plancha acompañadas de papas fritas, cebolla caramelizada, huevos fritos (también disponible en opción ensalada).",
         "order": 1
       },
@@ -596,7 +596,7 @@
           }
         ],
         "imageUrl": null,
-        "basePrice": 6500,
+        "basePrice": 9500,
         "name": "Canasto Frito",
         "order": 4
       },
@@ -810,7 +810,7 @@
     "items": [
       {
         "variants": [],
-        "basePrice": 3500,
+        "basePrice": 3000,
         "imageUrl": null,
         "name": "Nuggets de Pollo",
         "description": "10 Unidades.",
