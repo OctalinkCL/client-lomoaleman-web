@@ -1,0 +1,39 @@
+---
+const { section } = Astro.props;
+---
+
+<section class="break-inside-avoid mb-4 border-2 border-neutral-700 p-3 rounded">
+  <header class="mb-4">
+    <h2 class="text-amber-600 text-2xl font-semibold">
+      {section.title}
+    </h2>
+    <p class="text-neutral-400 text-xs">{section.subtitle}</p>
+  </header>
+  <ul class="grid gap-2">
+    {section.items.map((item: any) => (
+      <li class="border-t border-neutral-900 border-dashed pt-1">
+        <div class="flex justify-between items-start gap-4">
+          <h3 class="text-base text-amber-500 font-semibold">
+            {item.name}
+          </h3>
+          {(!item.variants || item.variants.length === 0) && (
+            <p class="font-semibold">${item.basePrice}</p>
+          )}
+        </div>
+        {item.description && (
+          <p class="text-neutral-400 text-xs">{item.description}</p>
+        )}
+        {item.variants && item.variants.length > 0 && (
+          <ul class="mt-1 space-y-0.5">
+            {item.variants.map((variant: any) => (
+              <li class="flex justify-between text-sm">
+                <span class="text-neutral-400">{variant.name}</span>
+                <span class="font-semibold">${variant.price}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+</section>

@@ -1,0 +1,371 @@
+[
+  {
+    "title": "Cervezas",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Austral Calafate 500ml",
+        "description": null,
+        "basePrice": 4200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Torobayo 500ml",
+        "description": null,
+        "basePrice": 4200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Valdivia 500ml",
+        "description": null,
+        "basePrice": 4000,
+        "imageUrl": null,
+        "variants": [],
+        "order": 2
+      },
+      {
+        "name": "Dolbek 500ml",
+        "description": null,
+        "basePrice": 4200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 3
+      },
+      {
+        "name": "Shop Cristal 2x500ml",
+        "description": null,
+        "basePrice": 5500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 4
+      },
+      {
+        "name": "Shop Cristal 300ml",
+        "description": null,
+        "basePrice": 3000,
+        "imageUrl": null,
+        "variants": [],
+        "order": 5
+      },
+      {
+        "name": "Shop Torobayo 2x500ml",
+        "description": null,
+        "basePrice": 7000,
+        "imageUrl": null,
+        "variants": [],
+        "order": 6
+      },
+      {
+        "name": "Shop Torobayo 500ml",
+        "description": null,
+        "basePrice": 4500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 7
+      },
+      {
+        "name": "Shop Torobayo 300ml",
+        "description": null,
+        "basePrice": 3500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 8
+      }
+    ],
+    "order": 0
+  },
+  {
+    "title": "Jugos naturales",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Jugo individual",
+        "description": null,
+        "basePrice": 3300,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Limonada menta",
+        "description": null,
+        "basePrice": 3300,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Té frío",
+        "description": null,
+        "basePrice": 3300,
+        "imageUrl": null,
+        "variants": [],
+        "order": 2
+      }
+    ],
+    "order": 1
+  },
+  {
+    "title": "Cócteles",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Mojito tradicional",
+        "description": null,
+        "basePrice": 5500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Mojito sabores",
+        "description": null,
+        "basePrice": 6000,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Aperol Spritz",
+        "description": null,
+        "basePrice": 5700,
+        "imageUrl": null,
+        "variants": [],
+        "order": 2
+      },
+      {
+        "name": "Ramazzotti",
+        "description": null,
+        "basePrice": 5700,
+        "imageUrl": null,
+        "variants": [],
+        "order": 3
+      },
+      {
+        "name": "Pisco Sour",
+        "description": null,
+        "basePrice": 4200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 4
+      },
+      {
+        "name": "Tequila margarita",
+        "description": null,
+        "basePrice": 5500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 5
+      },
+      {
+        "name": "Daiquiri tradicional",
+        "description": null,
+        "basePrice": 5000,
+        "imageUrl": null,
+        "variants": [],
+        "order": 6
+      },
+      {
+        "name": "Daiquiri sabores",
+        "description": null,
+        "basePrice": 5500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 7
+      },
+      {
+        "name": "Piña colada",
+        "description": null,
+        "basePrice": 5500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 8
+      }
+    ],
+    "order": 2
+  },
+  {
+    "title": "Tequila",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Jose Cuervo - 3 shots",
+        "description": null,
+        "basePrice": 5400,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Merendero - 3 shots",
+        "description": null,
+        "basePrice": 4900,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      }
+    ],
+    "order": 3
+  },
+  {
+    "title": "Whisky",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Ballantines",
+        "description": null,
+        "basePrice": 5900,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Johnnie Walker rojo",
+        "description": null,
+        "basePrice": 5200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Johnnie Walker negro",
+        "description": null,
+        "basePrice": 6400,
+        "imageUrl": null,
+        "variants": [],
+        "order": 2
+      },
+      {
+        "name": "Jack Daniels Honey",
+        "description": null,
+        "basePrice": 6200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 3
+      },
+      {
+        "name": "Jack Daniels Apple",
+        "description": null,
+        "basePrice": 6200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 4
+      },
+      {
+        "name": "Jack Daniels Gentleman",
+        "description": null,
+        "basePrice": 8490,
+        "imageUrl": null,
+        "variants": [],
+        "order": 5
+      },
+      {
+        "name": "Jack Daniels Fire",
+        "description": null,
+        "basePrice": 6200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 6
+      },
+      {
+        "name": "Chivas 12 años",
+        "description": null,
+        "basePrice": 6200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 7
+      }
+    ],
+    "order": 4
+  },
+  {
+    "title": "Drinks",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Tom Collins",
+        "description": "Gin Bombay, jugo de limón, soda.",
+        "basePrice": 6500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Gin tonic",
+        "description": "Gin Bombay, agua tónica.",
+        "basePrice": 6500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Tropical gin",
+        "description": "Gin Beefeater, Red Bull tropical.",
+        "basePrice": 6500,
+        "imageUrl": null,
+        "variants": [],
+        "order": 2
+      }
+    ],
+    "order": 5
+  },
+  {
+    "title": "Tragos",
+    "subtitle": null,
+    "items": [
+      {
+        "name": "Havana",
+        "description": null,
+        "basePrice": 5200,
+        "imageUrl": null,
+        "variants": [],
+        "order": 0
+      },
+      {
+        "name": "Jagermeister",
+        "description": null,
+        "basePrice": 4900,
+        "imageUrl": null,
+        "variants": [],
+        "order": 1
+      },
+      {
+        "name": "Pisco Alto del Carmen 35°",
+        "description": null,
+        "basePrice": 4400,
+        "imageUrl": null,
+        "variants": [],
+        "order": 2
+      },
+      {
+        "name": "Mistral 35°",
+        "description": null,
+        "basePrice": 5000,
+        "imageUrl": null,
+        "variants": [],
+        "order": 3
+      },
+      {
+        "name": "Mistral Nobel",
+        "description": null,
+        "basePrice": 5400,
+        "imageUrl": null,
+        "variants": [],
+        "order": 4
+      },
+      {
+        "name": "Botella de vino",
+        "description": null,
+        "basePrice": 5990,
+        "imageUrl": null,
+        "variants": [],
+        "order": 5
+      }
+    ],
+    "order": 6
+  }
+]
