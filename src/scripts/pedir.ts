@@ -28,6 +28,10 @@ import {
 
 const STORAGE_BRANCH = "lomoaleman:pedir:local";
 const STORAGE_CART = "lomoaleman:pedir:carro:v1";
+/** Hora (ms) en que se tocó "Enviar" con el carro actual. */
+const STORAGE_SENT = "lomoaleman:pedir:enviado";
+/** Datos del cliente, solo si marcó "Recordar mis datos". Nunca salen del teléfono. */
+const STORAGE_CUSTOMER = "lomoaleman:pedir:cliente:v1";
 
 const data = JSON.parse(document.getElementById("pedir-data")?.textContent ?? "{}") as {
   categories: ResolvedCategory[];
@@ -61,7 +65,10 @@ const ui = {
   itemPlus: el<HTMLButtonElement>("item-plus"),
   itemAdd: el<HTMLButtonElement>("item-add"),
   cartDialog: el<HTMLDialogElement>("cart-dialog"),
-  cartBranch: el("cart-branch"),
+  cartBranchName: el("cart-branch-name"),
+  cartBranchAddress: el("cart-branch-address"),
+  cartBranchChange: el<HTMLButtonElement>("cart-branch-change"),
+  cartSubmit: el<HTMLButtonElement>("cart-submit"),
   cartMain: el("cart-main"),
   cartLines: el("cart-lines"),
   cartTotal: el("cart-total"),
@@ -71,6 +78,12 @@ const ui = {
   cartSent: el("cart-sent"),
   cartClear: el<HTMLButtonElement>("cart-clear"),
   cartBack: el<HTMLButtonElement>("cart-back"),
+  cartEmpty: el<HTMLButtonElement>("cart-empty"),
+  cartForget: el<HTMLButtonElement>("cart-forget"),
+  sentDialog: el<HTMLDialogElement>("sent-dialog"),
+  sentWhen: el("sent-when"),
+  sentNew: el<HTMLButtonElement>("sent-new"),
+  sentKeep: el<HTMLButtonElement>("sent-keep"),
 };
 
 // --- Utilidades ----------------------------------------------------------------
@@ -142,7 +155,63 @@ function addLine(line: CartLine): void {
   if (existing) existing.qty = Math.min(MAX_LINE_QTY, existing.qty + line.qty);
   else lines.push(line);
   saveCart();
+  save(STORAGE_SENT, null); // si cambia el carro, ya no es el pedido enviado
   renderBar();
+}
+
+function emptyCart(): void {
+  lines = [];
+  saveCart();
+  save(STORAGE_SENT, null);
+  ui.cartForm.reset();
+  ui.addressField.classList.add("hidden");
+  if (ui.cartDialog.open) ui.cartDialog.close();
+  renderBar();
+  toast("Pedido vaciado");
+}
+
+/** "hace 5 minutos", "hace 2 horas", "hace 3 días". */
+function timeAgo(timestamp: number): string {
+  const minutes = Math.floor((Date.now() - timestamp) / 60000);
+  if (minutes < 1) return "recién";
+  if (minutes < 60) return `hace ${minutes} ${minutes === 1 ? "minuto" : "minutos"}`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `hace ${hours} ${hours === 1 ? "hora" : "horas"}`;
+  const days = Math.floor(hours / 24);
+  return `hace ${days} ${days === 1 ? "día" : "días"}`;
+}
+
+// --- Datos del cliente (solo en este teléfono) ---------------------------------------
+
+type SavedCustomer = Pick<Customer, "name" | "delivery" | "address" | "payment">;
+
+function loadCustomer(): SavedCustomer | null {
+  try {
+    const c = JSON.parse(load(STORAGE_CUSTOMER) ?? "null");
+    if (!c || typeof c.name !== "string") return null;
+    return {
+      name: c.name,
+      delivery: c.delivery === "delivery" ? "delivery" : "retiro",
+      address: typeof c.address === "string" ? c.address : undefined,
+      payment: typeof c.payment === "string" ? c.payment : undefined,
+    };
+  } catch {
+    return null;
+  }
+}
+
+function formField<T extends HTMLElement>(name: string): T {
+  return ui.cartForm.elements.namedItem(name) as unknown as T;
+}
+
+function fillCustomer(c: SavedCustomer): void {
+  formField<HTMLInputElement>("name").value = c.name;
+  for (const radio of ui.cartForm.querySelectorAll<HTMLInputElement>('input[name="delivery"]')) {
+    radio.checked = radio.value === c.delivery;
+  }
+  formField<HTMLInputElement>("address").value = c.address ?? "";
+  formField<HTMLSelectElement>("payment").value = c.payment ?? "";
+  ui.addressField.classList.toggle("hidden", c.delivery !== "delivery");
 }
 
 // --- Barra fija ----------------------------------------------------------------
@@ -211,6 +280,19 @@ ui.branchList.addEventListener("click", (event) => {
   if (!button?.dataset.branch) return;
   setBranch(button.dataset.branch);
   ui.branchDialog.close();
+
+  // Cambio de local desde el pedido abierto: se actualiza la tarjeta, o se cierra el pedido
+  // si el nuevo local solo recibe pedidos por teléfono.
+  if (ui.cartDialog.open) {
+    if (canOrder(branch)) {
+      renderCart();
+    } else {
+      ui.cartDialog.close();
+      toast(`${branchDisplayName(branch!.name)} recibe pedidos por teléfono`);
+    }
+    return;
+  }
+
   const itemId = pendingItemId;
   pendingItemId = undefined;
   if (itemId && canOrder(branch)) openItem(itemId);
@@ -457,7 +539,10 @@ function commentInput(value: string): string {
 
 function renderCart(): void {
   if (!branch) return;
-  ui.cartBranch.textContent = `Local: ${branchDisplayName(branch.name)}`;
+  const branchName = branchDisplayName(branch.name);
+  ui.cartBranchName.textContent = `Lomo Alemán ${branchName}`;
+  ui.cartBranchAddress.textContent = branch.address ?? "";
+  ui.cartSubmit.textContent = `Enviar pedido a ${branchName}`;
   ui.cartLines.innerHTML = lines
     .map((line, index) => {
       const item = items.get(line.itemId);
@@ -492,6 +577,9 @@ function openCart(): void {
   ui.cartMain.classList.remove("hidden");
   ui.cartSent.classList.add("hidden");
   ui.cartErrors.classList.add("hidden");
+  const saved = loadCustomer();
+  if (saved && !formField<HTMLInputElement>("name").value) fillCustomer(saved);
+  ui.cartForget.classList.toggle("hidden", !saved);
   renderCart();
   ui.cartDialog.showModal();
 }
@@ -502,6 +590,7 @@ function lineIndex(target: HTMLElement): number {
 
 function afterCartChange(): void {
   saveCart();
+  save(STORAGE_SENT, null);
   renderBar();
   if (lines.length) renderCart();
   else ui.cartDialog.close();
@@ -569,6 +658,19 @@ ui.cartForm.addEventListener("submit", (event) => {
   }
   ui.cartErrors.classList.add("hidden");
 
+  if (form.get("remember")) {
+    const saved: SavedCustomer = {
+      name: customer.name,
+      delivery: customer.delivery,
+      address: customer.delivery === "delivery" ? customer.address : undefined,
+      payment: customer.payment,
+    };
+    save(STORAGE_CUSTOMER, JSON.stringify(saved));
+  } else {
+    save(STORAGE_CUSTOMER, null);
+  }
+  save(STORAGE_SENT, String(Date.now()));
+
   const url = whatsappUrl(TEST_PHONE, buildMessage(branch, lines, items, customer));
   // Pestaña nueva para no perder la página; si el navegador la bloquea, se abre aquí mismo.
   const opened = window.open(url, "_blank");
@@ -579,14 +681,30 @@ ui.cartForm.addEventListener("submit", (event) => {
   ui.cartSent.classList.remove("hidden");
 });
 
-ui.cartClear.addEventListener("click", () => {
-  lines = [];
-  saveCart();
+ui.cartClear.addEventListener("click", emptyCart);
+
+ui.cartEmpty.addEventListener("click", () => {
+  const { count } = cartTotals();
+  const what = count === 1 ? "el producto" : `los ${count} productos`;
+  if (window.confirm(`¿Vaciar tu pedido? Se quitarán ${what}.`)) emptyCart();
+});
+
+ui.cartForget.addEventListener("click", () => {
+  save(STORAGE_CUSTOMER, null);
   ui.cartForm.reset();
   ui.addressField.classList.add("hidden");
-  ui.cartDialog.close();
-  renderBar();
-  toast("Pedido vaciado");
+  ui.cartForget.classList.add("hidden");
+  toast("Tus datos se borraron de este teléfono");
+});
+
+ui.sentNew.addEventListener("click", () => {
+  ui.sentDialog.close();
+  emptyCart();
+});
+
+ui.sentKeep.addEventListener("click", () => {
+  save(STORAGE_SENT, null);
+  ui.sentDialog.close();
 });
 
 ui.cartBack.addEventListener("click", () => {
@@ -596,7 +714,7 @@ ui.cartBack.addEventListener("click", () => {
 
 // --- Cierre de hojas y barra ---------------------------------------------------------
 
-for (const dialog of [ui.branchDialog, ui.itemDialog, ui.cartDialog]) {
+for (const dialog of [ui.branchDialog, ui.itemDialog, ui.cartDialog, ui.sentDialog]) {
   dialog.addEventListener("click", (event) => {
     const target = event.target as HTMLElement;
     // Clic en el fondo oscuro (fuera de la hoja) o en un botón de cerrar.
@@ -607,6 +725,7 @@ ui.branchDialog.addEventListener("close", () => {
   pendingItemId = undefined;
 });
 
+ui.cartBranchChange.addEventListener("click", openBranchDialog);
 ui.bar.pick.addEventListener("click", openBranchDialog);
 ui.bar.change.addEventListener("click", openBranchDialog);
 ui.bar.cart.addEventListener("click", openCart);
@@ -638,6 +757,15 @@ function init(): void {
     );
   }
   renderBar();
+
+  // Si vuelve con el mismo carro que ya envió, preguntar si empieza uno nuevo.
+  const sentAt = Number(load(STORAGE_SENT));
+  if (sentAt && lines.length && canOrder(branch)) {
+    ui.sentWhen.textContent = `Lo enviaste ${timeAgo(sentAt)}. ¿Quieres empezar uno nuevo?`;
+    ui.sentDialog.showModal();
+  } else if (sentAt && !lines.length) {
+    save(STORAGE_SENT, null);
+  }
 }
 
 init();

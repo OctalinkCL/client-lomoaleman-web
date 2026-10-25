@@ -1,7 +1,7 @@
 # Plan: pedidos por WhatsApp desde la carta
 
-**Estado:** etapas 1a y 1b implementadas en local (2026-10-25). Falta la prueba en teléfonos reales
-con WhatsApp (criterios para terminar la etapa 1).
+**Estado:** etapa 1 (local) **cerrada** el 2026-10-25: funciona en iPhone y el pedido llega a
+WhatsApp. Quedan mejoras de interfaz para una próxima etapa. El despliegue aún no se planifica.
 
 ## Objetivo
 
@@ -348,6 +348,22 @@ Notas de la implementación:
 - En `astro dev`, la barra de herramientas de Astro aparece abajo al centro y puede tapar la barra
   del pedido. No existe en producción; en desarrollo se puede minimizar o desactivar.
 
+Agregado después del cierre funcional (2026-10-25):
+
+- [x] **"Vaciar pedido"** siempre visible en la hoja del pedido, con confirmación.
+- [x] **Aviso de pedido ya enviado:** al tocar "Enviar" se guarda la hora. Si el cliente vuelve con
+      el mismo carro, aparece "Ya enviaste este pedido hace X" con "Empezar un pedido nuevo" o
+      "Seguir con este pedido". Cualquier cambio en el carro borra la marca. El carro **no** se
+      vacía solo al enviar, porque no sabemos si el mensaje se mandó en WhatsApp.
+- [x] **Recordar mis datos en este teléfono** (casilla marcada por defecto): nombre, entrega,
+      dirección y medio de pago se guardan solo en el navegador del cliente al enviar, y se
+      rellenan la próxima vez. "Olvidar" los borra. El comentario no se guarda.
+- [x] **Confirmación del local sin ventana extra:** el local se sigue recordando, pero justo encima
+      del botón de enviar hay una tarjeta "Enviarás este pedido a Lomo Alemán X" con la dirección y
+      "Cambiar", y el botón dice "Enviar pedido a X". "Cambiar" abre la lista sobre el pedido sin
+      perderlo; si el nuevo local solo recibe por teléfono, el pedido se cierra con un aviso. Se
+      descartó una ventana "¿Confirmas el local?" porque se aprueba por reflejo sin leer.
+
 **Para dar por terminada la etapa 1:**
 
 - [ ] La carta de `/pedir` calza 1 a 1 con `/carta` (sin los Líquidos de Colón).
@@ -408,7 +424,7 @@ quedó fuera del MVP.
 - Alcohol y cualquier producto de `liquidos.json`.
 - Pagos en línea, agotados, horarios, zonas y costo de delivery.
 - Cuentas de usuario y panel de administración.
-- "Repetir último pedido" y recordar los datos del cliente.
+- "Repetir mi último pedido": descartado por ahora (no se guarda el pedido una vez enviado).
 
 Todo lo operativo se resuelve conversando por WhatsApp, como hoy.
 
@@ -443,8 +459,7 @@ Todo lo operativo se resuelve conversando por WhatsApp, como hoy.
 
 ### Otras mejoras
 
-- "Repetir mi último pedido".
-- Recordar nombre, dirección y medio de pago del cliente en su teléfono.
+- (Ninguna pendiente: "recordar datos" se hizo en la etapa 1; "repetir último pedido" se descartó.)
 
 ## Por confirmar
 

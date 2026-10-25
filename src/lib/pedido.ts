@@ -13,6 +13,7 @@ export interface Branch {
   name: string;
   wsp?: string;
   phone?: string;
+  address?: string;
 }
 
 /** Cantidad elegida por opción, agrupada por grupo: { "extras-pizza": { "palta": 2 } }. */
