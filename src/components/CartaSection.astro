@@ -1,0 +1,78 @@
+---
+// Sección de la carta nueva (carta.json). Mismo aspecto que MenuSection.
+// Con `pedir`, cada producto muestra un botón "+" que maneja el script de /pedir.
+import Plus from "@lucide/astro/icons/plus";
+import type { ResolvedCategory } from "@lib/carta";
+import { formatCLP } from "@lib/pedido";
+
+interface Props {
+  category: ResolvedCategory;
+  pedir?: boolean;
+}
+
+const { category, pedir = false } = Astro.props;
+
+// Grupos de la categoría que cobran algo (por ejemplo, los extras de pizza):
+// se listan al final para que sus precios se vean sin abrir un producto.
+const pricedGroups = category.groups.filter((g) => g.options.some((o) => (o.price ?? 0) > 0));
+---
+
+<section class="break-inside-avoid mb-4 border-2 border-neutral-700 p-3 rounded">
+  <header class="mb-4">
+    <h2 class="text-amber-600 text-2xl font-semibold">
+      {category.name}
+    </h2>
+    <p class="text-neutral-400 text-xs">{category.description}</p>
+  </header>
+  <ul class="grid gap-2">
+    {category.items.map((item) => (
+      <li class="border-t border-neutral-900 border-dashed pt-1">
+        <div class="flex justify-between items-start gap-4">
+          <h3 class="text-base text-amber-500 font-semibold">
+            {item.name}
+          </h3>
+          <div class="flex items-start gap-2 shrink-0">
+            {item.price !== undefined && <p class="font-semibold">{formatCLP(item.price)}</p>}
+            {pedir && (
+              <button
+                type="button"
+                data-add={item.id}
+                aria-label={`Agregar ${item.name}`}
+                class="add-button hidden group-data-[orderable=true]:inline-flex group-data-[orderable=none]:inline-flex items-center justify-center w-7 h-7 rounded-full bg-lomo text-black hover:bg-amber-400 active:scale-90 transition"
+              >
+                <Plus class="w-4 h-4" stroke-width="3" />
+              </button>
+            )}
+          </div>
+        </div>
+        {item.description && (
+          <p class="text-neutral-400 text-xs">{item.description}</p>
+        )}
+        {item.variants && (
+          <ul class="mt-1 space-y-0.5">
+            {item.variants.map((variant) => (
+              <li class="flex justify-between text-sm">
+                <span class="text-neutral-400">{variant.name}</span>
+                <span class="font-semibold">{formatCLP(variant.price)}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </li>
+    ))}
+  </ul>
+
+  {pricedGroups.map((group) => (
+    <div class="mt-3 border-t border-neutral-700 pt-2">
+      <h3 class="text-base text-amber-500 font-semibold">{group.name}</h3>
+      <ul class="mt-1 space-y-0.5">
+        {group.options.map((option) => (
+          <li class="flex justify-between text-sm">
+            <span class="text-neutral-400">{option.name}</span>
+            <span class="font-semibold">+{formatCLP(option.price ?? 0)}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  ))}
+</section>

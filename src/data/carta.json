@@ -1,0 +1,1063 @@
+{
+  "version": 2,
+  "currency": "CLP",
+  "optionGroups": {
+    "proteina-sandwich": {
+      "name": "Proteína",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "mechada",
+          "name": "Mechada"
+        },
+        {
+          "id": "pollo",
+          "name": "Pollo"
+        },
+        {
+          "id": "churrasco",
+          "name": "Churrasco"
+        },
+        {
+          "id": "lomo-cerdo-ahumado",
+          "name": "Lomo cerdo ahumado"
+        },
+        {
+          "id": "lomo-centro",
+          "name": "Lomo centro"
+        }
+      ]
+    },
+    "proteina-completo": {
+      "name": "Proteína",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "mechada",
+          "name": "Mechada"
+        },
+        {
+          "id": "pollo",
+          "name": "Pollo"
+        },
+        {
+          "id": "churrasco",
+          "name": "Churrasco"
+        },
+        {
+          "id": "lomo-cerdo-ahumado",
+          "name": "Lomo cerdo ahumado"
+        }
+      ]
+    },
+    "proteina-ensalada": {
+      "name": "Proteína",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "mechada",
+          "name": "Mechada"
+        },
+        {
+          "id": "pollo",
+          "name": "Pollo"
+        },
+        {
+          "id": "churrasco",
+          "name": "Churrasco"
+        },
+        {
+          "id": "lomo-cerdo-ahumado",
+          "name": "Lomo cerdo ahumado"
+        },
+        {
+          "id": "lomo-centro",
+          "name": "Lomo centro"
+        },
+        {
+          "id": "huevo",
+          "name": "Huevo"
+        },
+        {
+          "id": "atun",
+          "name": "Atún"
+        }
+      ]
+    },
+    "proteina-pizza": {
+      "name": "Proteína",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "mechada",
+          "name": "Mechada"
+        },
+        {
+          "id": "pollo",
+          "name": "Pollo"
+        },
+        {
+          "id": "churrasco",
+          "name": "Churrasco"
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni"
+        },
+        {
+          "id": "atun",
+          "name": "Atún"
+        },
+        {
+          "id": "lomo-ahumado",
+          "name": "Lomo ahumado"
+        }
+      ]
+    },
+    "salsa-pizza": {
+      "name": "Salsa",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "salsa-de-tomate",
+          "name": "Salsa de tomate"
+        }
+      ]
+    },
+    "extras-pizza": {
+      "name": "Extras",
+      "min": 0,
+      "max": 10,
+      "options": [
+        {
+          "id": "camaron",
+          "name": "Porción de camarón",
+          "price": 5500,
+          "maxQty": 3
+        },
+        {
+          "id": "carne-de-vacuno",
+          "name": "Carne de vacuno",
+          "price": 4000,
+          "maxQty": 3
+        },
+        {
+          "id": "carne-de-pollo",
+          "name": "Carne de pollo",
+          "price": 4000,
+          "maxQty": 3
+        },
+        {
+          "id": "tocino",
+          "name": "Tocino",
+          "price": 4000,
+          "maxQty": 3
+        },
+        {
+          "id": "queso",
+          "name": "Queso",
+          "price": 2500,
+          "maxQty": 3
+        },
+        {
+          "id": "pepperoni",
+          "name": "Pepperoni",
+          "price": 2500,
+          "maxQty": 3
+        },
+        {
+          "id": "choclo",
+          "name": "Choclo",
+          "price": 2500,
+          "maxQty": 3
+        },
+        {
+          "id": "palta",
+          "name": "Palta",
+          "price": 2500,
+          "maxQty": 3
+        }
+      ]
+    },
+    "sabor-bebida": {
+      "name": "Sabor",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "pepsi",
+          "name": "Pepsi"
+        }
+      ]
+    },
+    "acompanamiento": {
+      "name": "Acompañamiento",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "papas-fritas",
+          "name": "Papas fritas"
+        },
+        {
+          "id": "ensalada",
+          "name": "Ensalada"
+        }
+      ]
+    },
+    "bbq": {
+      "name": "Salsa BBQ",
+      "min": 0,
+      "max": 1,
+      "options": [
+        {
+          "id": "con-salsa-bbq",
+          "name": "Con salsa BBQ"
+        }
+      ]
+    },
+    "agregado-otro": {
+      "name": "Agregado",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "choclo",
+          "name": "Choclo"
+        },
+        {
+          "id": "tomate",
+          "name": "Tomate"
+        },
+        {
+          "id": "porotos-verdes",
+          "name": "Porotos verdes"
+        },
+        {
+          "id": "huevo-frito",
+          "name": "Huevo frito"
+        },
+        {
+          "id": "chucrut",
+          "name": "Chucrut"
+        },
+        {
+          "id": "cebolla-frita",
+          "name": "Cebolla frita"
+        },
+        {
+          "id": "palta",
+          "name": "Palta"
+        },
+        {
+          "id": "queso",
+          "name": "Queso"
+        },
+        {
+          "id": "pepinillo-salado",
+          "name": "Pepinillo salado"
+        },
+        {
+          "id": "lechuga",
+          "name": "Lechuga"
+        },
+        {
+          "id": "cebollin",
+          "name": "Cebollín"
+        },
+        {
+          "id": "pimenton",
+          "name": "Pimentón"
+        },
+        {
+          "id": "aceitunas",
+          "name": "Aceitunas"
+        },
+        {
+          "id": "palmitos",
+          "name": "Palmitos"
+        },
+        {
+          "id": "cebolla-morada",
+          "name": "Cebolla morada"
+        },
+        {
+          "id": "huevo-duro",
+          "name": "Huevo duro"
+        },
+        {
+          "id": "rotkohl",
+          "name": "Rotkohl"
+        }
+      ]
+    },
+    "tipo-aji": {
+      "name": "Ají",
+      "min": 1,
+      "max": 1,
+      "options": [
+        {
+          "id": "verde",
+          "name": "Verde"
+        },
+        {
+          "id": "ahumado",
+          "name": "Ahumado"
+        }
+      ]
+    }
+  },
+  "categories": [
+    {
+      "id": "sandwichs-casa",
+      "name": "Sandwichs de la casa",
+      "description": "Mechada - Pollo - Churrasco - Lomo cerdo Ahumado - Lomo centro",
+      "optionGroups": [
+        "proteina-sandwich"
+      ],
+      "items": [
+        {
+          "id": "aleman",
+          "name": "Alemán",
+          "description": "Chucrut, pepinillos, tomate y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "irlandes",
+          "name": "Irlandés",
+          "description": "Choclo, palta, y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "cebollin",
+          "name": "Cebollín",
+          "description": "Cebollín, queso, champiñón y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "la-martina",
+          "name": "La Martina",
+          "description": "Palta, doble huevo, queso, tocino y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "pimenton",
+          "name": "Pimentón",
+          "description": "Pimentón, cebolla, queso, doble huevo, mayo.",
+          "price": 7990
+        },
+        {
+          "id": "concepcion",
+          "name": "Concepción",
+          "description": "Lechuga, tomate, cebolla morada, queso y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "andalue",
+          "name": "Andalué",
+          "description": "Tomate, palta, queso, lechuga y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "san-andres",
+          "name": "San Andrés",
+          "description": "Pepinillos, tocino, queso y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "chiguayante",
+          "name": "Chiguayante",
+          "description": "Cebollín, choclo, queso, palta y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "lota",
+          "name": "Lota",
+          "description": "Queso, aceitunas, tocino, mayo.",
+          "price": 7990
+        },
+        {
+          "id": "torre-alemana",
+          "name": "Torre Alemana",
+          "description": "Choclo, porotos verdes, cebolla frita, tomate, queso y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "champinon",
+          "name": "Champiñón",
+          "description": "Choclo, champiñón, queso y mayo.",
+          "price": 7990
+        },
+        {
+          "id": "germano",
+          "name": "Germano",
+          "description": "Lomo ahumado, tomate caramelizado, rotkohl, pepinillo dill, salsa de mostaza miel y mayo.",
+          "price": 7990
+        }
+      ]
+    },
+    {
+      "id": "saludables",
+      "name": "Saludables",
+      "items": [
+        {
+          "id": "ensalada-del-campo",
+          "name": "Ensalada del campo",
+          "description": "Lechuga, palta, choclo, champiñón, palmitos, pollo y salsa de yogurt.",
+          "price": 6900
+        },
+        {
+          "id": "ensalada-mediterranea",
+          "name": "Ensalada mediterránea",
+          "description": "Lomo ahumado, tomate, aceituna, queso, lechuga y salsa de yogurt.",
+          "price": 6900
+        },
+        {
+          "id": "sandwich-vegetariano",
+          "name": "Sandwich vegetariano",
+          "description": "5 vegetales a elección.",
+          "price": 6900,
+          "requiredNote": {
+            "label": "Vegetales",
+            "placeholder": "Indica tus 5 vegetales"
+          }
+        },
+        {
+          "id": "arma-tu-ensalada",
+          "name": "Arma tu ensalada",
+          "description": "1 Proteína + base lechuga + 3 vegetales (Proteína: Huevo, carne, pollo, atún, lomo). Vegetales disponibles en sección agregados.",
+          "price": 6900,
+          "optionGroups": [
+            "proteina-ensalada"
+          ],
+          "requiredNote": {
+            "label": "Vegetales",
+            "placeholder": "Indica tus 3 vegetales"
+          }
+        }
+      ]
+    },
+    {
+      "id": "almuerzo-ejecutivo",
+      "name": "Almuerzo Ejecutivo",
+      "items": [
+        {
+          "id": "lomo-a-lo-pobre",
+          "name": "Lomo a lo Pobre",
+          "description": "Medallón de lomo ahumado con papas fritas, cebolla caramelizada y huevo frito (también disponible opción ensalada).",
+          "price": 8500,
+          "optionGroups": [
+            "acompanamiento"
+          ]
+        },
+        {
+          "id": "pollo-a-lo-pobre",
+          "name": "Pollo a lo Pobre",
+          "description": "Pechuga de pollo a la plancha acompañadas de papas fritas, cebolla caramelizada, huevos fritos (también disponible en opción ensalada).",
+          "price": 7500,
+          "optionGroups": [
+            "acompanamiento"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sandwichs",
+      "name": "Sandwichs",
+      "description": "Mechada - Pollo - Churrasco - Lomo cerdo Ahumado - Lomo centro",
+      "optionGroups": [
+        "proteina-sandwich"
+      ],
+      "items": [
+        {
+          "id": "patron",
+          "name": "Patrón",
+          "description": "Queso, tomate, choclo, mayo.",
+          "price": 7900
+        },
+        {
+          "id": "diplomatico",
+          "name": "Diplomático",
+          "description": "Queso, doble huevo, mayo.",
+          "price": 7900
+        },
+        {
+          "id": "chacarero",
+          "name": "Chacarero",
+          "description": "Porotos verdes, tomate, mayo.",
+          "price": 7900
+        },
+        {
+          "id": "luco-palta",
+          "name": "Luco Palta",
+          "description": "Palta, queso.",
+          "price": 7900
+        },
+        {
+          "id": "completo",
+          "name": "Completo",
+          "description": "Chucrut, tomate, mayo.",
+          "price": 7900
+        },
+        {
+          "id": "barros-luco",
+          "name": "Barros Luco",
+          "description": "Carne, queso.",
+          "price": 7900
+        },
+        {
+          "id": "italiano",
+          "name": "Italiano",
+          "description": "Tomate, palta, mayo.",
+          "price": 7900
+        },
+        {
+          "id": "pobre",
+          "name": "Pobre",
+          "description": "Queso, cebolla frita, doble huevo, mayo.",
+          "price": 7900
+        },
+        {
+          "id": "sandwich-solo",
+          "name": "Sandwich solo",
+          "description": "Carne.",
+          "price": 6500
+        }
+      ]
+    },
+    {
+      "id": "completos",
+      "name": "Completos",
+      "items": [
+        {
+          "id": "completo-aleman",
+          "name": "Alemán",
+          "description": "Chucrut, mayo.",
+          "price": 3100
+        },
+        {
+          "id": "completo-criollo",
+          "name": "Criollo",
+          "description": "Salsa verde, tomate, mayo.",
+          "price": 3400
+        },
+        {
+          "id": "completo-tradicional",
+          "name": "Tradicional",
+          "description": "Chucrut, alemana, mayo.",
+          "price": 3300
+        },
+        {
+          "id": "completo-italiano",
+          "name": "Italiano",
+          "description": "Palta, tomate, mayo.",
+          "price": 3500
+        },
+        {
+          "id": "completo-dinamico",
+          "name": "Dinámico",
+          "description": "Chucrut, tomate, palta, mayo.",
+          "price": 3600
+        },
+        {
+          "id": "completo-irlandes",
+          "name": "Irlandés",
+          "description": "Palta, choclo, mayo.",
+          "price": 3500
+        },
+        {
+          "id": "completo-luco",
+          "name": "Luco",
+          "description": "Triple queso.",
+          "price": 3600
+        },
+        {
+          "id": "completo-germano",
+          "name": "Germano",
+          "description": "Rotkohl, alemana, mayo.",
+          "price": 3900
+        },
+        {
+          "id": "completo-rotkohl",
+          "name": "Rotkohl",
+          "description": "Rotkohl, mayo.",
+          "price": 3800
+        },
+        {
+          "id": "completo-as",
+          "name": "As",
+          "description": "Italiano, irlandés, luco (mechada, pollo, churrasco, lomo).",
+          "price": 4100,
+          "optionGroups": [
+            "proteina-completo"
+          ]
+        },
+        {
+          "id": "completo-as-napolitano",
+          "name": "As Napolitano",
+          "description": "Tomate, queso, aceitunas, orégano, mayo (mechada, pollo, churrasco, lomo).",
+          "price": 4100,
+          "optionGroups": [
+            "proteina-completo"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hamburguesas",
+      "name": "Hamburguesas",
+      "description": "Todas incluyen papas fritas y doble queso",
+      "items": [
+        {
+          "id": "gringa",
+          "name": "Gringa",
+          "description": "Queso, lechuga, cebolla morada, tomate, pepinillo, mayo.",
+          "price": 8900
+        },
+        {
+          "id": "bacon",
+          "name": "Bacon",
+          "description": "Tocino, queso, champiñones, pepinillo y mayo.",
+          "price": 8900
+        },
+        {
+          "id": "avocado",
+          "name": "Avocado",
+          "description": "Palta, queso, tocino, cebolla morada y mayo.",
+          "price": 8900
+        },
+        {
+          "id": "alemana",
+          "name": "Alemana",
+          "description": "Queso, morrón, cebolla morada, tocino, huevo doble y mayo.",
+          "price": 8900
+        },
+        {
+          "id": "italiana",
+          "name": "Italiana",
+          "description": "Queso, tomate, palta y mayo.",
+          "price": 8900
+        },
+        {
+          "id": "texas",
+          "name": "Texas",
+          "description": "Cebolla caramelizada, tocino, queso, salsa BBQ, pepinillos y mayo.",
+          "price": 8900
+        },
+        {
+          "id": "kansas",
+          "name": "Kansas",
+          "description": "Pepinillo Dill, tocino, queso y mayo.",
+          "price": 8900
+        },
+        {
+          "id": "americana",
+          "name": "Americana",
+          "description": "Cheddar, cebolla cruda, tocino y mayo. (BBQ opcional).",
+          "price": 8900,
+          "optionGroups": [
+            "bbq"
+          ]
+        },
+        {
+          "id": "la-big-gorda",
+          "name": "La Big Gorda",
+          "description": "Primer piso: Hamburguesas, queso, cebolla morada, lechuga y pepinillo. Segundo Piso: Hamburguesa, tomate, mayo y palta.",
+          "price": 10990
+        }
+      ]
+    },
+    {
+      "id": "para-compartir",
+      "name": "Para Compartir",
+      "items": [
+        {
+          "id": "papas-marinas",
+          "name": "Papas Marinas",
+          "description": "Base de papas fritas, salsa de queso, machas, camarón y un toque de cilantro o perejil.",
+          "price": 19000
+        },
+        {
+          "id": "pichanga",
+          "name": "Pichanga",
+          "description": "Base de papas fritas, acompañadas con vienesas, pollo, carne, tomate, palta, huevo doble, queso, aceitunas y pepinillos.",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 13000
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 19000
+            }
+          ]
+        },
+        {
+          "id": "chorrillanas",
+          "name": "Chorrillanas",
+          "description": "Base de papas fritas, acompañadas con carne, choricillos, huevos fritos y cebolla caramelizada.",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 13000
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 19000
+            }
+          ]
+        },
+        {
+          "id": "papas-mechada",
+          "name": "Papas Mechada",
+          "description": "Base de papas fritas, salsa de queso, carne mechada, champiñón, cebollín y morrón.",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 13000
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 19000
+            }
+          ]
+        },
+        {
+          "id": "canasto-frito",
+          "name": "Canasto Frito",
+          "description": "Aros de cebolla, papas fritas y empanadas de queso.",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 6500
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 9500
+            }
+          ]
+        },
+        {
+          "id": "papas-champinon",
+          "name": "Papas Champiñón",
+          "description": "Base de papas fritas, acompañadas de pollo y salsa de champiñón.",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 13000
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 19000
+            }
+          ]
+        },
+        {
+          "id": "cheddar-bacon",
+          "name": "Cheddar Bacon",
+          "description": "Base de papas fritas, acompañadas con tocino, salsa cheddar y salsa ácida.",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 10000
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 15000
+            }
+          ]
+        },
+        {
+          "id": "salchipapas",
+          "name": "Salchipapas",
+          "description": "Papas fritas, vienesas Llanquihue.",
+          "price": 7000
+        },
+        {
+          "id": "nuggets-papas-fritas",
+          "name": "Nuggets + Papas fritas",
+          "price": 7990
+        }
+      ]
+    },
+    {
+      "id": "agregados",
+      "name": "Agregados",
+      "items": [
+        {
+          "id": "mayonesa",
+          "name": "Mayonesa",
+          "price": 650
+        },
+        {
+          "id": "salsa-verde",
+          "name": "Salsa verde",
+          "price": 600
+        },
+        {
+          "id": "pepinillo-agridulce",
+          "name": "Pepinillo agridulce",
+          "price": 1000
+        },
+        {
+          "id": "aros-de-cebolla",
+          "name": "Aros de cebolla",
+          "price": 1500
+        },
+        {
+          "id": "tocino",
+          "name": "Tocino",
+          "price": 1500
+        },
+        {
+          "id": "extra-carne",
+          "name": "Extra carne",
+          "price": 3000
+        },
+        {
+          "id": "empanadas-de-queso",
+          "name": "Empanadas de queso",
+          "description": "6 unidades.",
+          "price": 1990
+        },
+        {
+          "id": "otros-agregados",
+          "name": "Otros",
+          "description": "Choclo, Tomate, Porotos verdes, Huevo frito, Chucrut, Cebolla frita, Palta, Queso, Pepinillo salado, Lechuga, Cebollín, Pimentón, Aceitunas, Palmitos, Cebolla morada, Huevo duro, Rotkohl.",
+          "price": 1000,
+          "optionGroups": [
+            "agregado-otro"
+          ]
+        },
+        {
+          "id": "aji-verde-o-ahumado",
+          "name": "Ají verde o ahumado",
+          "description": "Gratis.",
+          "price": 0,
+          "optionGroups": [
+            "tipo-aji"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "liquidos",
+      "name": "Líquidos",
+      "items": [
+        {
+          "id": "bebidas",
+          "name": "Bebidas",
+          "variants": [
+            {
+              "id": "250cc",
+              "name": "250cc",
+              "price": 1200
+            },
+            {
+              "id": "350cc",
+              "name": "350cc",
+              "price": 1600
+            },
+            {
+              "id": "500cc",
+              "name": "500cc",
+              "price": 1800
+            }
+          ],
+          "optionGroups": [
+            "sabor-bebida"
+          ]
+        },
+        {
+          "id": "bebidas-1-5lt-delivery",
+          "name": "Bebidas 1,5lt. Delivery",
+          "price": 2500,
+          "optionGroups": [
+            "sabor-bebida"
+          ]
+        },
+        {
+          "id": "redbull",
+          "name": "Redbull",
+          "price": 1900
+        },
+        {
+          "id": "cafe-o-te",
+          "name": "Café o Té",
+          "price": 1500
+        },
+        {
+          "id": "jugo-natural",
+          "name": "Jugo Natural",
+          "price": 3000
+        },
+        {
+          "id": "limonada",
+          "name": "Limonada",
+          "description": "Menta jengibre.",
+          "price": 3500
+        }
+      ]
+    },
+    {
+      "id": "papas-fritas",
+      "name": "Papas Fritas",
+      "items": [
+        {
+          "id": "papas-fritas",
+          "name": "Papas fritas",
+          "variants": [
+            {
+              "id": "chica",
+              "name": "Chica",
+              "price": 3000
+            },
+            {
+              "id": "mediana",
+              "name": "Mediana",
+              "price": 5000
+            },
+            {
+              "id": "grande",
+              "name": "Grande",
+              "price": 6000
+            },
+            {
+              "id": "1-kilo",
+              "name": "1 Kilo",
+              "price": 8000
+            }
+          ]
+        },
+        {
+          "id": "nuggets-de-pollo",
+          "name": "Nuggets de Pollo",
+          "description": "10 Unidades.",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": "pizzas",
+      "name": "Pizzas",
+      "optionGroups": [
+        "extras-pizza"
+      ],
+      "items": [
+        {
+          "id": "napolitana",
+          "name": "Napolitana",
+          "description": "Jamón tomate al pesto, aceituna, queso.",
+          "price": 14500
+        },
+        {
+          "id": "chilena",
+          "name": "Chilena",
+          "description": "Carne, tomate, cebolla, aceituna, queso.",
+          "price": 14500
+        },
+        {
+          "id": "pollona",
+          "name": "Pollona",
+          "description": "Pollo, crema, choclo, champiñón, queso.",
+          "price": 14500
+        },
+        {
+          "id": "arabe",
+          "name": "Árabe",
+          "description": "Carne al limón, cebolla, doble queso.",
+          "price": 14500
+        },
+        {
+          "id": "munich",
+          "name": "Múnich",
+          "description": "Queso, pesto, salsa napolitana (salsa de tomate, tomates en cubos, pimienta, un toque de vino blanco y un toque de azúcar).",
+          "price": 11500
+        },
+        {
+          "id": "berlin",
+          "name": "Berlín",
+          "description": "Carne mechada, morrón, champiñones, tocino, salsa BBQ, cebolla salteada y queso.",
+          "price": 15500
+        },
+        {
+          "id": "essen",
+          "name": "Essen",
+          "description": "Pepperoni, doble queso, salsa napolitana (salsa de tomate, tomate en cubos, pimienta, un toque de vino y azúcar).",
+          "price": 13500
+        },
+        {
+          "id": "bremen",
+          "name": "Bremen",
+          "description": "Carne de lomo, piña, tocino y queso.",
+          "price": 13500
+        },
+        {
+          "id": "hamburgo",
+          "name": "Hamburgo",
+          "description": "Salsa blanca, camarones ecuatorianos, machas, queso y un toque de perejil ajo.",
+          "price": 17000
+        },
+        {
+          "id": "kiel",
+          "name": "Kiel",
+          "description": "5 vegetales a elección y queso.",
+          "price": 13500,
+          "requiredNote": {
+            "label": "Vegetales",
+            "placeholder": "Indica tus 5 vegetales"
+          }
+        },
+        {
+          "id": "romana",
+          "name": "Romana",
+          "description": "Pollo al pesto, choclo, palmitos, palta y queso.",
+          "price": 15500
+        },
+        {
+          "id": "rostock",
+          "name": "Rostock",
+          "description": "Pollo, morrón, choclo y queso.",
+          "price": 14500
+        },
+        {
+          "id": "pollo-bbq",
+          "name": "Pollo BBQ",
+          "description": "Salsa BBQ, pollo, tocino, queso y cebolla morada.",
+          "price": 14500
+        },
+        {
+          "id": "arma-tu-pizza",
+          "name": "Arma tu pizza",
+          "description": "1 proteína (mechada, pollo, churrasco, pepperoni, atún, lomo ahumado), 3 vegetales, 1 salsa y queso.",
+          "price": 15500,
+          "optionGroups": [
+            "proteina-pizza",
+            "salsa-pizza"
+          ],
+          "requiredNote": {
+            "label": "Vegetales",
+            "placeholder": "Indica tus 3 vegetales"
+          }
+        }
+      ]
+    }
+  ]
+}
