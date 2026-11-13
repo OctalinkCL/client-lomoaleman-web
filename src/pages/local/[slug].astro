@@ -29,7 +29,7 @@ const { branch } = Astro.props;
       </p>
 
       <ul class="mb-9">
-        <li>{branch.address}</li>
+        {branch.address && <li>{branch.address}</li>}
         {
           branch.phone ? (
             <li>

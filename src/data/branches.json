@@ -99,14 +99,12 @@
   },
   {
     "id": "los-pioneros",
-    "phone": "412462450",
-    "wsp": "56957366212",
+    "phone": "56947333421",
+    "wsp": "56947333421",
     "disabled": false,
     "name": "LOS PIONEROS",
     "slug": "los-pioneros",
-    "address": "Tucapel 821, Los Pioneros",
     "menu": "https://lomoaleman.cl/wordpress/wp-content/uploads/2023/11/lomo_lospioneros_web.pdf",
-    "map": "https://maps.google.com/maps?q=Tucapel%20821%2C%20San%20Pedro%20de%20la%20Paz%2C%20B%C3%ADo%20B%C3%ADo&t=m&z=15&output=embed&iwloc=near",
     "order": 8
   },
   {
@@ -172,5 +170,16 @@
     "slug": "villuco",
     "address": "Camino a Chiguayante 4097, Local B,  Villuco.",
     "order": 14
+  },
+  {
+    "id": "talcahuano",
+    "name": "Talcahuano",
+    "slug": "talcahuano",
+    "address": "Lago Llanquihue 277, Valle San Eugenio",
+    "phone": "56954456610",
+    "wsp": "56954456610",
+    "map": "https://maps.google.com/maps?q=Lago%20Llanquihue%20277%2C%20Talcahuano&t=m&z=15&output=embed&iwloc=near",
+    "disabled": false,
+    "order": 15
   }
 ]
