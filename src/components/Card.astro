@@ -3,7 +3,7 @@ import MapPin from '@lucide/astro/icons/map-pin';
 
 interface Props {
   name: string;
-  address: string;
+  address?: string;
   href: string;
 }
 
@@ -17,6 +17,6 @@ const { href, name, address } = Astro.props;
   >
     <MapPin />
     <h2 class="text-lg font-semibold uppercase my-3">{name}</h2>
-    <p class="text-sm capitalize">{address}</p>
+    {address && <p class="text-sm capitalize">{address}</p>}
   </a>
 </li>
